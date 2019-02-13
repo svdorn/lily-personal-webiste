@@ -1,0 +1,88 @@
+.footer {
+    position: relative;
+    z-index: 1000;
+    height: 150px;
+    background-color: #e60000;
+    color: white;
+}
+
+.footer-logo {
+    vertical-align: top;
+    margin-top: 60px;
+    margin-left: 60px;
+    font-size: 32px;
+    display: inline-block;
+}
+
+.footer-text {
+    margin-top: 20px;
+    margin-left: 60px;
+    display: inline-block;
+}
+.footer-text > div {
+    margin-top: 10px;
+}
+.footer-text > div:hover {
+    text-decoration: underline;
+}
+
+.footer-button {
+    display: inline-block;
+    float: right;
+    padding-right: 60px;
+    margin-top: 60px;
+}
+.footer-button > button {
+    background: #ffffff;
+    color: #e60000;
+}
+.footer-button > button:hover {
+    background: #ffffff;
+}
+
+.top-shadow {
+    width: 100%;
+    overflow-y: hidden;
+    padding: 0 0 10px;
+}
+.top-shadow > div {
+    width: 100%;
+    box-shadow: 0px 0px 6px 3px #676767;
+    -moz-box-shadow: 0px 0px 6px 3px #676767;
+    -webkit-box-shadow: 0px 0px 6px 3px #676767;
+}
+
+@media only screen and (max-width: 700px) {
+    .footer-logo {
+        margin-left: 30px;
+    }
+    .footer-text {
+        margin-left: 30px;
+    }
+    .footer-button {
+        padding-right: 30px;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .footer {
+        height: 230px;
+    }
+    .footer-logo {
+        margin-left: 30px;
+    }
+    .footer-text {
+        margin-right: 30px;
+    }
+    .footer-button {
+        float: none;
+        text-align: left;
+        display: block;
+        margin-top: 30px;
+        margin-left: 30px;
+    }
+}
+@media only screen and (max-width: 400px) {
+    .footer {
+        height: 330px;
+    }
+}

@@ -1,0 +1,51 @@
+.home {
+    padding-top: 70px;
+}
+.home > div:first-child {
+    justify-content: space-between;
+    flex-direction: row;
+    max-width: 550px;
+    margin-left: 100px;
+    text-align: left;
+}
+.home > div:first-child > div:first-child {
+    font-size: 36px;
+    color: #e60000;
+}
+.home > div:first-child > div:nth-child(2) {
+    font-size: 20px;
+    margin-top: 25px;
+}
+.home > div:first-child > button {
+    margin-top: 25px;
+    background: #e60000;
+    color: #ffffff;
+}
+
+@media only screen and (max-width: 800px) {
+    .home > div:first-child {
+        max-width: 450px;
+        margin-left: 50px;
+    }
+    .home > div:first-child > div:first-child {
+        font-size: 32px;
+    }
+    .home > div:first-child > div:nth-child(2) {
+        font-size: 18px;
+        margin-top: 20px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .home > div:first-child {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .home > div:first-child > div:first-child {
+        font-size: 26px;
+    }
+    .home > div:first-child > div:nth-child(2) {
+        font-size: 16px;
+        margin-top: 15px;
+    }
+}
