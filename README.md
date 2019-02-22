@@ -10,7 +10,7 @@ git clone https://github.com/svdorn/Lily
 cd Lily
 npm install
 ```
-To run the project run this instruction in your TrustLease folder.
+To run the project run this instruction in your Lily folder.
 ```
 npm start
 ```
