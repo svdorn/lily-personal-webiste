@@ -20,7 +20,7 @@ a {
 }
 
 .menu > div:first-child {
-    color: #e60000;
+    color: var(--primary-color);
     font-size: 40px;
     margin: 10px 20px;
     display: inline-block;
@@ -36,7 +36,7 @@ a {
     display: inline-block;
 }
 .desktop-menu > div:hover {
-    color: #e60000;
+    color: var(--primary-color);
 }
 .desktop-menu > div:last-child {
     margin-right: 25px;

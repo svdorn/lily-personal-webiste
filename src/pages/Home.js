@@ -11,7 +11,7 @@ class Home extends Component {
             <div className="home">
                 <div>
                     <div>
-                        Trustless leasing agreements that are guaranteed, instantaneous, and easy to use.
+                        Lily Thongnuam
                     </div>
                     <div>
                         TrustLease aims to transform traditional leasing systems by giving power to both the lessor and lessee

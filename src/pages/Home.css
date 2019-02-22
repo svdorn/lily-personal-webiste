@@ -10,7 +10,7 @@
 }
 .home > div:first-child > div:first-child {
     font-size: 36px;
-    color: #e60000;
+    color: var(--primary-color);
 }
 .home > div:first-child > div:nth-child(2) {
     font-size: 20px;
@@ -18,7 +18,7 @@
 }
 .home > div:first-child > button {
     margin-top: 25px;
-    background: #e60000;
+    background: var(--primary-color);
     color: #ffffff;
 }
 

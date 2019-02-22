@@ -2,7 +2,7 @@
     position: relative;
     z-index: 1000;
     height: 150px;
-    background-color: #e60000;
+    background-color: var(--primary-color);
     color: white;
 }
 
@@ -34,7 +34,7 @@
 }
 .footer-button > button {
     background: #ffffff;
-    color: #e60000;
+    color: var(--primary-color);
 }
 .footer-button > button:hover {
     background: #ffffff;

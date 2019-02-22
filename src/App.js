@@ -10,16 +10,19 @@ import { MuiThemeProvider, createMuiTheme } from "@material-ui/core";
 
 import './App.css';
 
-const theme = createMuiTheme({
-  palette: {
+const typography = { fontFamily: '"Muli", sans-serif', useNextVariants: true };
+const palette = {
     primary: {
-        main: "#2683FF",
+        main: "#607d8b",
     },
     secondary: {
       main: '#000000',
-    },
-  },
-});
+    }
+};
+
+const theme = createMuiTheme({ palette, typography });
+
+console.log("theme: ", theme);
 
 const App = () => (
   <Router>
