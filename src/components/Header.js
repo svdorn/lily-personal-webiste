@@ -10,15 +10,15 @@ import "./Header.css";
 
 const routes = [
     {
+        name: "Dance",
+        link: "/dance"
+    },
+    {
         name: "About",
         link: "/about"
     },
     {
-        name: "Menu",
-        link: "/menu"
-    },
-    {
-        name: "Contact Us",
+        name: "Contact",
         link: "/contact"
     }
 ];
@@ -51,10 +51,10 @@ class Header extends Component {
         if (!location) return index;
 
         switch(location.pathname) {
-            case "/about":
+            case "/dance":
                 index = 0;
                 break;
-            case "/menu":
+            case "/about":
                 index = 1;
                 break;
             case "/contact":

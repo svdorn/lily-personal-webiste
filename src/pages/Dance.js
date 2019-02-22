@@ -1,14 +1,14 @@
 import React, {Component} from 'react';
 
-class Menu extends Component {
+class Dance extends Component {
 
     render() {
         return (
             <div>
-                Menu page
+                Dance page
             </div>
         );
     }
 }
 
-export default Menu;
+export default Dance;

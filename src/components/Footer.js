@@ -6,15 +6,15 @@ import "./Footer.css";
 
 const routes = [
     {
+        name: "Dance",
+        link: "/dance"
+    },
+    {
         name: "About",
         link: "/about"
     },
     {
-        name: "Menu",
-        link: "/menu"
-    },
-    {
-        name: "Contact Us",
+        name: "Contact",
         link: "/contact"
     }
 ];
@@ -32,7 +32,7 @@ class Footer extends Component {
                     <div />
                 </div>
                 <div className="footer-logo">
-                    <Link to="/" onClick={this.scrollToTop}><b>TrustLease</b></Link>
+                    <Link to="/" onClick={this.scrollToTop}><b>Lily T</b></Link>
                 </div>
                 <div className="footer-text">
                     {routes.map((route) => (
