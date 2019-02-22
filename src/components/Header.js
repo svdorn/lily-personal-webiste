@@ -123,7 +123,7 @@ class Header extends Component {
         return (
             <div className="menu">
                 <div>
-                    <Link to="/" onClick={this.scrollToTop}><b>Lily Thongnuam</b></Link>
+                    <Link to="/" onClick={this.scrollToTop}><b>Lily<br/>Thongnuam</b></Link>
                 </div>
                 { this.makeDesktopMenu() }
                 { this.makeMobileMenu() }

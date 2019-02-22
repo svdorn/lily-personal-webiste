@@ -21,7 +21,7 @@ a {
 
 .menu > div:first-child {
     color: var(--primary-color);
-    font-size: 40px;
+    font-size: 22px;
     margin: 10px 20px;
     display: inline-block;
 }
