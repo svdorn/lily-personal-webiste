@@ -8,13 +8,8 @@ body {
     min-height: 100vh;
     margin: auto;
     position: relative;
-    padding-top: 100px;
     padding-bottom: 30px;
     background-color: var(--background-color);
-}
-
-.App-Width {
-    max-width: 1500px;
 }
 
 .font42px {

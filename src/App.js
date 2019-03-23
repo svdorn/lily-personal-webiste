@@ -28,12 +28,10 @@ const App = () => (
             <Header />
 
             <div className="App">
-                <div className="App-Width">
-                    <Route path="/" exact component={Home} />
-                    <Route path="/about" component={About} />
-                    <Route path="/contact" component={Contact} />
-                    <Route path="/dance" component={Dance} />
-                </div>
+                <Route path="/" exact component={Home} />
+                <Route path="/about" component={About} />
+                <Route path="/contact" component={Contact} />
+                <Route path="/dance" component={Dance} />
             </div>
 
             <Footer />
