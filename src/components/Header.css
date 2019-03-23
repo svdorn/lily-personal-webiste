@@ -4,23 +4,17 @@ a {
 }
 
 .menu {
-    position: fixed;
+    position: absolute;
     height: 70px;
     top: 0;
     width: 100%;
-    color: rgb(32, 32, 32);
-    -webkit-box-shadow: 0px 8px 7px -5px #d7d7d7;
-    -moz-box-shadow: 0px 8px 7px -5px #d7d7d7;
-    box-shadow: 0px 8px 7px -5px #d7d7d7;
-    -webkit-transition: all 0.5s ease-in-out;
-    -ms-transition: all 0.5s ease-in-out;
-    transition: all 0.5s ease-in-out;
+    color: var(--text-black);
     background-color: var(--background-color);
     z-index: 100;
 }
 
 .menu > div:first-child {
-    color: var(--primary-color);
+    color: var(--text-white);
     font-size: 22px;
     margin: 10px 20px;
     display: inline-block;
@@ -36,7 +30,7 @@ a {
     display: inline-block;
 }
 .desktop-menu > div:hover {
-    color: var(--primary-color);
+    color: var(--text-white);
 }
 .desktop-menu > div:last-child {
     margin-right: 25px;

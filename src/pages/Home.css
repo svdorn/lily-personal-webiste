@@ -16,18 +16,22 @@
 }
 .bio-container > h1 {
     font-size: 40px;
-    color: var(--primary-color);
+    color: var(--text-white);
 }
 .bio-container > div {
     font-size: 19px;
+    color: var(--text-black);
 }
 
 .button-container {
     margin-top: 25px;
 }
 .button {
-    background-color: var(--primary-color) !important;
-    color: var(--primary-white) !important;
+    background-color: var(--text-white) !important;
+    color: var(--text-black) !important;
+}
+.button:hover {
+    background-color: var(--primary-honeydew) !important;
 }
 
 .images-container {
@@ -37,6 +41,7 @@
 }
 .image {
     height: 500px;
+    overflow-x: hidden;
 }
 
 @media only screen and (max-width: 800px) {

@@ -10,12 +10,12 @@
     vertical-align: top;
     margin-top: 60px;
     margin-left: 60px;
-    font-size: 32px;
+    font-size: 26px;
     display: inline-block;
 }
 
 .footer-text {
-    margin-top: 20px;
+    margin-top: 30px;
     margin-left: 60px;
     display: inline-block;
 }
@@ -33,11 +33,11 @@
     margin-top: 60px;
 }
 .footer-button > button {
-    background: #ffffff;
-    color: var(--primary-color);
+    background: var(--text-white);
+    color: var(--text-black);
 }
 .footer-button > button:hover {
-    background: #ffffff;
+    background: var(--primary-honeydew);
 }
 
 .top-shadow {
