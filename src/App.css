@@ -3,32 +3,71 @@ body {
 }
 
 .App {
-  text-align: center;
-  width: 100%;
-  min-height: 100vh;
-  max-width: 1500px;
-  margin: auto;
-  position: relative;
-  margin-top: 100px;
-  margin-bottom: 30px;
+    text-align: center;
+    width: 100%;
+    min-height: 100vh;
+    max-width: 1500px;
+    margin: auto;
+    position: relative;
+    padding-top: 100px;
+    padding-bottom: 30px;
+    background-color: var(--background-color);
 }
 
-.font42px { font-size: 42px; }
-.font40px { font-size: 40px; }
-.font38px { font-size: 38px; }
-.font36px { font-size: 36px; }
-.font34px { font-size: 34px; }
-.font32px { font-size: 32px; }
-.font30px { font-size: 30px; }
-.font28px { font-size: 28px; }
-.font26px { font-size: 26px; }
-.font24px { font-size: 24px; }
-.font22px { font-size: 22px; }
-.font20px { font-size: 20px; }
-.font18px { font-size: 18px; }
-.font16px { font-size: 16px; }
-.font14px { font-size: 14px; }
-.font12px { font-size: 12px; }
-.font10px { font-size: 10px; }
-.font8px { font-size: 8px; }
-.font6px { font-size: 6px; }
+.font42px {
+    font-size: 42px;
+}
+.font40px {
+    font-size: 40px;
+}
+.font38px {
+    font-size: 38px;
+}
+.font36px {
+    font-size: 36px;
+}
+.font34px {
+    font-size: 34px;
+}
+.font32px {
+    font-size: 32px;
+}
+.font30px {
+    font-size: 30px;
+}
+.font28px {
+    font-size: 28px;
+}
+.font26px {
+    font-size: 26px;
+}
+.font24px {
+    font-size: 24px;
+}
+.font22px {
+    font-size: 22px;
+}
+.font20px {
+    font-size: 20px;
+}
+.font18px {
+    font-size: 18px;
+}
+.font16px {
+    font-size: 16px;
+}
+.font14px {
+    font-size: 14px;
+}
+.font12px {
+    font-size: 12px;
+}
+.font10px {
+    font-size: 10px;
+}
+.font8px {
+    font-size: 8px;
+}
+.font6px {
+    font-size: 6px;
+}

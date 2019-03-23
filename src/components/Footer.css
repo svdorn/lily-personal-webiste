@@ -2,7 +2,7 @@
     position: relative;
     z-index: 1000;
     height: 150px;
-    background-color: var(--primary-color);
+    background-color: var(--background-color);
     color: white;
 }
 

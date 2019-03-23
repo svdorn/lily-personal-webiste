@@ -1,13 +1,8 @@
-import React, {Component} from 'react';
+import React from "react";
 
-class Dance extends Component {
-
+class Dance extends React.Component {
     render() {
-        return (
-            <div>
-                Dance page
-            </div>
-        );
+        return <div>Dance page</div>;
     }
 }
 
