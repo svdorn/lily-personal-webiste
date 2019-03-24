@@ -6,12 +6,16 @@ import "./Footer.css";
 
 const routes = [
     {
+        name: "About",
+        link: "/about"
+    },
+    {
         name: "Dance",
         link: "/dance"
     },
     {
-        name: "About",
-        link: "/about"
+        name: "Choreography",
+        link: "/choreography"
     },
     {
         name: "Contact",
