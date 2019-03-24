@@ -11,7 +11,8 @@
     "react-router-scroll-top": "^0.1.1",
     "react-scripts": "1.1.1",
     "react-scroll": "^1.7.11",
-    "react-swipeable-views": "^0.13.1"
+    "react-swipeable-views": "^0.13.1",
+    "react-youtube": "^7.9.0"
   },
   "scripts": {
     "start": "react-scripts start",

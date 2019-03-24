@@ -24,6 +24,10 @@
     height: 700px;
 }
 
+.dance-first-frame {
+    height: 200px;
+}
+
 .cards {
     padding-top: 50px;
     padding-bottom: 50px;
@@ -34,6 +38,15 @@
     margin: auto 20px;
 }
 
+.videos {
+    padding-bottom: 50px;
+}
+.video {
+    height: 390px;
+    width: 640px;
+    margin-top: 30px;
+}
+
 .swirly {
     position: absolute;
     left: 50%;
@@ -41,6 +54,11 @@
     width: 2013px;
     height: 172px;
     margin-left: -1007px;
+}
+
+.header {
+    font-size: 40px;
+    color: var(--text-white);
 }
 
 .bio-container {
@@ -80,13 +98,30 @@
     text-align: center;
     margin: 0 auto 40px auto;
 }
-
 .resume > h1 {
     font-size: 40px;
     color: var(--text-black);
 }
 .resume > img {
     height: 900px;
+}
+
+.contact {
+    font-size: 20px;
+    color: var(--text-black);
+    display: inline-flex;
+    flex-wrap: wrap-reverse;
+}
+.contact > img {
+    height: 350px;
+    border-radius: 20px;
+}
+.contact > div {
+    margin-top: 100px;
+    margin-left: 50px;
+}
+.contact > div > div {
+    margin-top: 20px;
 }
 
 .button-container {
@@ -127,6 +162,7 @@
     .bio-container {
         line-height: 1.4em;
         margin: -10px auto 0 auto;
+        width: 92%;
     }
     .bio-container > h1 {
         font-size: 30px;
@@ -166,6 +202,25 @@
     .about-first-frame {
         height: 800px;
     }
+    .video {
+        height: 274.22px;
+        width: 450px;
+    }
+    .contact {
+        font-size: 18px;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .contact {
+        text-align: center;
+    }
+    .contact > div {
+        margin: auto;
+    }
+    .contact > img {
+        margin: 20px auto;
+    }
 }
 
 @media only screen and (max-width: 500px) {
@@ -189,5 +244,9 @@
     }
     .resume > img {
         height: 500px;
+    }
+    .video {
+        height: 164.53px;
+        width: 270px;
     }
 }
