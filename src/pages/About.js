@@ -68,7 +68,12 @@ const Bio = () => {
 };
 
 const Resume = () => {
-    return <div>Resume</div>;
+    return (
+        <div className="resume">
+            <h1>Resume</h1>
+            <div />
+        </div>
+    );
 };
 
 export default About;

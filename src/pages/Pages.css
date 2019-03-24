@@ -73,6 +73,22 @@
     color: var(--text-black);
 }
 
+.resume {
+    max-width: 800px;
+    line-height: 1.4em;
+    text-align: left;
+    margin: 0 auto 40px auto;
+}
+
+.resume > h1 {
+    font-size: 40px;
+    color: var(--text-black);
+}
+.resume > div {
+    font-size: 15px;
+    color: var(--text-black);
+}
+
 .button-container {
     margin-top: 25px;
 }
