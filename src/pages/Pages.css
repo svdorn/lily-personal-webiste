@@ -1,4 +1,4 @@
-.home-container {
+.container {
     width: 100%;
     height: 100%;
 }
@@ -11,10 +11,17 @@
 }
 .first-frame-container {
     position: relative;
-    height: 690px;
     background-color: var(--primary-lavender);
     padding-top: 100px;
     width: 100%;
+}
+
+.home-first-frame {
+    height: 690px;
+}
+
+.about-first-frame {
+    height: 450px;
 }
 
 .cards {
@@ -80,7 +87,7 @@
     .home {
         display: block;
     }
-    .first-frame-container {
+    .home-first-frame {
         height: 900px;
     }
     .bio-container {
