@@ -114,18 +114,17 @@
 .contact {
     font-size: 20px;
     color: var(--text-black);
-    display: inline-flex;
-    flex-wrap: wrap-reverse;
+    display: block;
+}
+.contact > div {
+    margin: auto;
 }
 .contact > img {
     height: 350px;
     border-radius: 20px;
+    margin: 40px auto;
 }
-.contact > div {
-    margin-top: 100px;
-    margin-left: 50px;
-}
-.contact > div > div {
+.contact > div > div:not(:first-child) {
     margin-top: 20px;
 }
 
@@ -213,18 +212,6 @@
     }
     .contact {
         font-size: 18px;
-    }
-}
-
-@media only screen and (max-width: 550px) {
-    .contact {
-        text-align: center;
-    }
-    .contact > div {
-        margin: auto;
-    }
-    .contact > img {
-        margin: 20px auto;
     }
 }
 
