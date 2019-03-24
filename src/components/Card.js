@@ -12,8 +12,8 @@ class Card extends Component {
         const { content, img, imgWidth, link, title } = this.props;
 
         return (
-            <Link to={link} className="card">
-                <CardContainer>
+            <Link to={link}>
+                <CardContainer className="card">
                     <CardMedia className="media" image={img} style={{ width: imgWidth }} />
                     <CardContent>
                         <Typography gutterBottom variant="h5" component="h2">

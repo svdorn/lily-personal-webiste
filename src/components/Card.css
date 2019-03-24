@@ -1,6 +1,7 @@
 .card {
     max-width: 300px;
     cursor: pointer;
+    margin: auto;
 }
 
 .card:hover {

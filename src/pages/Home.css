@@ -73,7 +73,44 @@
 }
 
 @media only screen and (max-width: 800px) {
+    .cards {
+        padding-top: 0;
+        display: block;
+    }
+    .home {
+        display: block;
+    }
+    .first-frame-container {
+        height: 900px;
+    }
+    .bio-container {
+        line-height: 1.4em;
+        margin: -10px auto 0 auto;
+    }
+    .bio-container > h1 {
+        font-size: 30px;
+    }
+    .bio-container > div {
+        font-size: 17px;
+    }
+
+    .images-container {
+        margin: 20px auto;
+        text-align: center;
+        width: 280px;
+        border-radius: 25px;
+    }
+    .image {
+        height: 420.42px;
+        overflow-x: hidden;
+    }
 }
 
 @media only screen and (max-width: 500px) {
+    .bio-container > h1 {
+        font-size: 26px;
+    }
+    .bio-container > div {
+        font-size: 16px;
+    }
 }
