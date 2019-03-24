@@ -21,7 +21,7 @@
 }
 
 .about-first-frame {
-    height: 450px;
+    height: 700px;
 }
 
 .cards {
@@ -55,6 +55,21 @@
 }
 .bio-container > div {
     font-size: 19px;
+    color: var(--text-black);
+}
+
+.about-bio-container {
+    max-width: 800px;
+    line-height: 1.4em;
+    text-align: left;
+    margin: auto;
+}
+.about-bio-container > h1 {
+    font-size: 40px;
+    color: var(--text-white);
+}
+.about-bio-container > div {
+    font-size: 15px;
     color: var(--text-black);
 }
 

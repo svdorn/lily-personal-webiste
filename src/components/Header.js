@@ -90,7 +90,7 @@ class Header extends Component {
             <div className="desktop-menu">
                 {routes.map((route, index) => {
                     let selected = "";
-                    if (selectedIndex == index) {
+                    if (selectedIndex === index) {
                         selected = "selected";
                     }
 
