@@ -51,7 +51,27 @@ const Swirl = () => (
 const Cards = () => {
     return (
         <div className="cards">
-            <Card title="Education" content="Lily studied at Chapman University" />
+            <Card
+                img="/images/Chapman.jpg"
+                imgWidth={150}
+                title="Education"
+                content="Lily is studying at Chapman University where she will graduate in May with a BFA in Dance Performance and a minor in Studio Art."
+                link="/about"
+            />
+            <Card
+                img="/images/Lily/Headshot.jpg"
+                imgWidth={110}
+                title="Dance"
+                content="Lily is trained in a variety of styles since a young age, including contemporary, jazz, hip hop, modern, ballet, ballroom, and tap."
+                link="/dance"
+            />
+            <Card
+                img="/images/Lily/Danceshot_2.jpg"
+                imgWidth={110}
+                title="Choreography"
+                content=" During her time at Chapman, Lily has choreographed for multiple shows, such as Spring Dance Concert, Concert Intime, and Chapman Dance Alliance."
+                link="/choreography"
+            />
         </div>
     );
 };

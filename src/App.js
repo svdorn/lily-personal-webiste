@@ -7,6 +7,7 @@ import Contact from "./pages/Contact";
 import Dance from "./pages/Dance";
 import Home from "./pages/Home";
 import { MuiThemeProvider, createMuiTheme } from "@material-ui/core";
+import ScrollToTop from "react-router-scroll-top";
 
 import "./App.css";
 
@@ -24,18 +25,20 @@ const theme = createMuiTheme({ palette, typography });
 
 const App = () => (
     <Router>
-        <MuiThemeProvider theme={theme}>
-            <Header />
+        <ScrollToTop>
+            <MuiThemeProvider theme={theme}>
+                <Header />
 
-            <div className="App">
-                <Route path="/" exact component={Home} />
-                <Route path="/about" component={About} />
-                <Route path="/contact" component={Contact} />
-                <Route path="/dance" component={Dance} />
-            </div>
+                <div className="App">
+                    <Route path="/" exact component={Home} />
+                    <Route path="/about" component={About} />
+                    <Route path="/contact" component={Contact} />
+                    <Route path="/dance" component={Dance} />
+                </div>
 
-            <Footer />
-        </MuiThemeProvider>
+                <Footer />
+            </MuiThemeProvider>
+        </ScrollToTop>
     </Router>
 );
 

@@ -20,6 +20,11 @@
 .cards {
     padding-top: 50px;
     padding-bottom: 50px;
+    display: inline-flex;
+}
+
+.cards > a {
+    margin: auto 20px;
 }
 
 .swirly {
@@ -54,7 +59,7 @@
     color: var(--text-black) !important;
 }
 .button:hover {
-    background-color: var(--primary-honeydew) !important;
+    background-color: var(--primary-color) !important;
 }
 
 .images-container {
