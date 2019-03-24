@@ -72,6 +72,10 @@ const Resume = () => {
         <div className="resume">
             <h1>Resume</h1>
             <img src="/images/Resume.jpg" alt="Lily Thongnuam Resume" />
+            <div className="upon-request">
+                Available upon request - CV, headshots, work resume, references, school transcript,
+                dance films, and/or class videos.
+            </div>
         </div>
     );
 };

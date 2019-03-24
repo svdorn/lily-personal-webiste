@@ -105,6 +105,11 @@
 .resume > img {
     height: 900px;
 }
+.upon-request {
+    max-width: 470px;
+    width: 92%;
+    margin: 20px auto;
+}
 
 .contact {
     font-size: 20px;
