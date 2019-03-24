@@ -1,21 +1,25 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
-import Menu from '@material-ui/core/Menu';
-import MenuItem from '@material-ui/core/MenuItem';
-import IconButton from '@material-ui/core/IconButton';
-import MenuIcon from '@material-ui/icons/Menu';
+import Menu from "@material-ui/core/Menu";
+import MenuItem from "@material-ui/core/MenuItem";
+import IconButton from "@material-ui/core/IconButton";
+import MenuIcon from "@material-ui/icons/Menu";
 import { withRouter } from "react-router";
 
 import "./Header.css";
 
 const routes = [
     {
+        name: "About",
+        link: "/about"
+    },
+    {
         name: "Dance",
         link: "/dance"
     },
     {
-        name: "About",
-        link: "/about"
+        name: "Choreography",
+        link: "/choreography"
     },
     {
         name: "Contact",
@@ -40,25 +44,28 @@ class Header extends Component {
             const selectedIndex = this.getSelectedIndex(nextProps.location);
             // set the index if it isn't the current index
             if (selectedIndex !== this.state.selectedIndex) {
-                this.setState({ selectedIndex })
+                this.setState({ selectedIndex });
             }
         }
     }
 
-    getSelectedIndex = (location) => {
+    getSelectedIndex = location => {
         let index = -1;
 
         if (!location) return index;
 
-        switch(location.pathname) {
-            case "/dance":
+        switch (location.pathname) {
+            case "/about":
                 index = 0;
                 break;
-            case "/about":
+            case "/dance":
                 index = 1;
                 break;
-            case "/contact":
+            case "/choreography":
                 index = 2;
+                break;
+            case "/contact":
+                index = 3;
                 break;
             default:
                 index = -1;
@@ -66,11 +73,7 @@ class Header extends Component {
         }
 
         return index;
-    }
-
-    scrollToTop() {
-        window.scrollTo(0,0);
-    }
+    };
 
     handleClick = event => {
         this.setState({ open: event.currentTarget });
@@ -81,13 +84,22 @@ class Header extends Component {
     };
 
     makeDesktopMenu() {
+        const { selectedIndex } = this.state;
+
         return (
             <div className="desktop-menu">
-                {routes.map((route, index) => (
-                    <div key={route.name}>
-                        <Link to={route.link} onClick={this.scrollToTop}>{route.name}</Link>
-                    </div>
-                ))}
+                {routes.map((route, index) => {
+                    let selected = "";
+                    if (selectedIndex == index) {
+                        selected = "selected";
+                    }
+
+                    return (
+                        <div key={route.name} className={selected}>
+                            <Link to={route.link}>{route.name}</Link>
+                        </div>
+                    );
+                })}
             </div>
         );
     }
@@ -96,21 +108,21 @@ class Header extends Component {
         return (
             <div className="mobile-menu">
                 <IconButton color="inherit" onClick={this.handleClick}>
-                    <MenuIcon/>
+                    <MenuIcon />
                 </IconButton>
                 <Menu
-                  id="mobile-menu"
-                  anchorEl={this.state.open}
-                  open={Boolean(this.state.open)}
-                  onClose={this.handleClose}
+                    id="mobile-menu"
+                    anchorEl={this.state.open}
+                    open={Boolean(this.state.open)}
+                    onClose={this.handleClose}
                 >
                     {routes.map((route, index) => (
-                        <Link to={route.link} onClick={this.scrollToTop} key={route.name}>
+                        <Link to={route.link} key={route.name}>
                             <MenuItem
-                              selected={index === this.state.selectedIndex}
-                              onClick={this.handleClose}
+                                selected={index === this.state.selectedIndex}
+                                onClick={this.handleClose}
                             >
-                              {route.name}
+                                {route.name}
                             </MenuItem>
                         </Link>
                     ))}
@@ -123,10 +135,16 @@ class Header extends Component {
         return (
             <div className="menu">
                 <div>
-                    <Link to="/" onClick={this.scrollToTop}><b>Lily<br/>Thongnuam</b></Link>
+                    <Link to="/">
+                        <b>
+                            Lily
+                            <br />
+                            Thongnuam
+                        </b>
+                    </Link>
                 </div>
-                { this.makeDesktopMenu() }
-                { this.makeMobileMenu() }
+                {this.makeDesktopMenu()}
+                {this.makeMobileMenu()}
             </div>
         );
     }

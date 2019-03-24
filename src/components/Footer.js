@@ -20,10 +20,6 @@ const routes = [
 ];
 
 class Footer extends Component {
-    scrollToTop() {
-        window.scrollTo(0, 0);
-    }
-
     render() {
         return (
             <div className="footer">
@@ -31,22 +27,20 @@ class Footer extends Component {
                     <div />
                 </div>
                 <div className="footer-logo">
-                    <Link to="/" onClick={this.scrollToTop}>
+                    <Link to="/">
                         <b>Lily Thongnuam</b>
                     </Link>
                 </div>
                 <div className="footer-text">
                     {routes.map(route => (
                         <div key={route.name}>
-                            <Link to={route.link} onClick={this.scrollToTop}>
-                                {route.name}
-                            </Link>
+                            <Link to={route.link}>{route.name}</Link>
                         </div>
                     ))}
                 </div>
                 <div className="footer-button">
                     <Button size="large">
-                        <Link to="/menu">Contact Lily</Link>
+                        <Link to="/contact">Contact Lily</Link>
                     </Button>
                 </div>
             </div>

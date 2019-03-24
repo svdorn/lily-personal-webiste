@@ -32,6 +32,9 @@ a {
 .desktop-menu > div:hover {
     color: var(--text-white);
 }
+.desktop-menu > div.selected {
+    color: var(--text-white);
+}
 .desktop-menu > div:last-child {
     margin-right: 25px;
 }
