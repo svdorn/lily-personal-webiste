@@ -8,7 +8,7 @@ import "./Pages.css";
 
 class About extends React.Component {
     handleClick = () => {
-        animateScroll.scrollTo(900);
+        animateScroll.scrollTo(800);
     };
 
     render() {
@@ -71,7 +71,7 @@ const Resume = () => {
     return (
         <div className="resume">
             <h1>Resume</h1>
-            <div />
+            <img src="/images/Resume.jpg" alt="Lily Thongnuam Resume" />
         </div>
     );
 };
