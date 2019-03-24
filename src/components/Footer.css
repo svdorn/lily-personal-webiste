@@ -26,6 +26,10 @@
     text-decoration: underline;
 }
 
+.footer-links {
+    margin-top: 10px;
+}
+
 .footer-button {
     display: inline-block;
     float: right;

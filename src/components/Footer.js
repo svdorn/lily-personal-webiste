@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import Button from "@material-ui/core/Button";
+import SocialLinks from "../components/SocialLinks";
 
 import "./Footer.css";
 
@@ -34,6 +35,9 @@ class Footer extends Component {
                     <Link to="/">
                         <b>Lily Thongnuam</b>
                     </Link>
+                    <div styleName="footer-links">
+                        <SocialLinks />
+                    </div>
                 </div>
                 <div className="footer-text">
                     {routes.map(route => (

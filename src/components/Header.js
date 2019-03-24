@@ -4,6 +4,7 @@ import Menu from "@material-ui/core/Menu";
 import MenuItem from "@material-ui/core/MenuItem";
 import IconButton from "@material-ui/core/IconButton";
 import MenuIcon from "@material-ui/icons/Menu";
+import SocialLinks from "../components/SocialLinks";
 import { withRouter } from "react-router";
 
 import "./Header.css";
@@ -100,6 +101,9 @@ class Header extends Component {
                         </div>
                     );
                 })}
+                <div>
+                    <SocialLinks />
+                </div>
             </div>
         );
     }
