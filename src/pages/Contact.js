@@ -16,7 +16,7 @@ class Contact extends React.Component {
                         <div>Email: lilythongnuam@gmail.com</div>
                         <div>Phone: (608)-575-8565</div>
                     </div>
-                    <img src="/images/Lily/Bodyshot_2.jpg" alt="Lily Thongnuam" />
+                    <img src="/images/Lily/Bodyshot_1.jpg" alt="Lily Thongnuam" />
                 </div>
             </div>
         );
