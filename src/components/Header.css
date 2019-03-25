@@ -5,7 +5,6 @@ a {
 
 .menu {
     position: absolute;
-    height: 70px;
     top: 0;
     width: 100%;
     color: var(--text-black);
@@ -16,24 +15,31 @@ a {
 .menu > div:first-child {
     color: var(--text-white);
     font-size: 30px;
-    margin: 22px 20px 0 20px;
+    margin: 20px 20px 0 20px;
     display: inline-block;
 }
 .desktop-menu {
     float: right;
-    margin-top: 25px;
+    margin-top: 15px;
     margin-right: 15px;
     display: inline-block;
 }
 .desktop-menu > div {
-    margin-left: 30px;
+    margin-left: 10px;
+    cursor: pointer;
     display: inline-block;
+    padding: 10px 15px;
 }
-.desktop-menu > div:hover {
-    color: var(--text-white);
+
+.desktop-menu > div:not(:last-child):hover {
+    background-color: var(--secondary-lavender);
+    border-radius: 5px;
 }
 .desktop-menu > div.selected {
     color: var(--text-white);
+}
+.desktop-menu > div.selected:hover {
+    color: var(--text-black);
 }
 .desktop-menu > div:last-child {
     margin-right: 25px;
@@ -45,12 +51,12 @@ a {
     display: inline-block;
 }
 
-@media only screen and (min-width: 801px) {
+@media only screen and (min-width: 851px) {
     .mobile-menu {
         display: none;
     }
 }
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 850px) {
     .desktop-menu {
         display: none;
     }

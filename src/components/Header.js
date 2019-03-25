@@ -96,10 +96,12 @@ class Header extends Component {
                     }
 
                     return (
-                        <div key={route.name} className={selected}>
-                            <Link to={route.link}>
-                                <b>{route.name}</b>
-                            </Link>
+                        <div>
+                            <div key={route.name} className={selected}>
+                                <Link to={route.link}>
+                                    <b>{route.name}</b>
+                                </Link>
+                            </div>
                         </div>
                     );
                 })}
