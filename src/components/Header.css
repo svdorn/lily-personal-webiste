@@ -24,6 +24,12 @@ a {
     margin-right: 15px;
     display: inline-block;
 }
+.desktop-menu > a {
+    margin-left: 10px;
+    cursor: pointer;
+    display: inline-block;
+    padding: 10px 15px;
+}
 .desktop-menu > div {
     margin-left: 10px;
     cursor: pointer;
@@ -31,14 +37,14 @@ a {
     padding: 10px 15px;
 }
 
-.desktop-menu > div:not(:last-child):hover {
+.desktop-menu > a:hover {
     background-color: var(--secondary-lavender);
     border-radius: 5px;
 }
-.desktop-menu > div.selected {
+.desktop-menu > a > div.selected {
     color: var(--text-white);
 }
-.desktop-menu > div.selected:hover {
+.desktop-menu > a:hover > div.selected {
     color: var(--text-black);
 }
 .desktop-menu > div:last-child {
