@@ -74,6 +74,7 @@
 }
 .bio-container > h1 {
     font-size: 40px;
+    font-family: "Coronetscript", cursive;
     color: var(--text-white);
 }
 .bio-container > div {
