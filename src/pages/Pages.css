@@ -214,7 +214,10 @@
         font-size: 18px;
     }
     .swirly {
-        position: relative;
+        width: auto;
+    }
+    .swirly > svg {
+        width: auto;
     }
 }
 
