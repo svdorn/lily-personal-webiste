@@ -15,8 +15,8 @@ a {
 
 .menu > div:first-child {
     color: var(--text-white);
-    font-size: 22px;
-    margin: 10px 20px;
+    font-size: 30px;
+    margin: 22px 20px 0 20px;
     display: inline-block;
 }
 .desktop-menu {
@@ -55,7 +55,7 @@ a {
         display: none;
     }
     .menu > div:first-child {
-        margin: 18px 10px;
-        display: inline-block;
+        margin: 25px 10px;
+        font-size: 22px;
     }
 }

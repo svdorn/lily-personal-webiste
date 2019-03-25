@@ -97,7 +97,9 @@ class Header extends Component {
 
                     return (
                         <div key={route.name} className={selected}>
-                            <Link to={route.link}>{route.name}</Link>
+                            <Link to={route.link}>
+                                <b>{route.name}</b>
+                            </Link>
                         </div>
                     );
                 })}
@@ -126,7 +128,7 @@ class Header extends Component {
                                 selected={index === this.state.selectedIndex}
                                 onClick={this.handleClose}
                             >
-                                {route.name}
+                                <b>{route.name}</b>
                             </MenuItem>
                         </Link>
                     ))}
@@ -140,11 +142,7 @@ class Header extends Component {
             <div className="menu">
                 <div>
                     <Link to="/">
-                        <b>
-                            Lily
-                            <br />
-                            Thongnuam
-                        </b>
+                        <b>Lily Thongnuam</b>
                     </Link>
                 </div>
                 {this.makeDesktopMenu()}
