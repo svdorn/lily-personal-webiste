@@ -38,6 +38,6 @@ const Videos = () => (
     </div>
 );
 
-const videoIds = ["CR7Mqgipnbc", "eR_SrN8xz90", "1YUkzn6SWCI", "1G_M96IXs8M", "J7yqAfRpEi0"];
+const videoIds = ["CR7Mqgipnbc", "eR_SrN8xz90", "1YUkzn6SWCI", "J7yqAfRpEi0"];
 
 export default Dance;
