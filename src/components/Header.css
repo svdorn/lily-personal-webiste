@@ -51,12 +51,12 @@ a {
     display: inline-block;
 }
 
-@media only screen and (min-width: 851px) {
+@media only screen and (min-width: 901px) {
     .mobile-menu {
         display: none;
     }
 }
-@media only screen and (max-width: 850px) {
+@media only screen and (max-width: 900px) {
     .desktop-menu {
         display: none;
     }
