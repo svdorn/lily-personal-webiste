@@ -5,7 +5,7 @@
 
 .home {
     display: inline-flex;
-    max-width: 1500px;
+    max-width: 97%;
     margin: 40px auto 0 auto;
     align-items: center;
 }
@@ -140,7 +140,7 @@
 
 .philosophy {
     display: inline-flex;
-    max-width: 1500px;
+    max-width: 97%;
     margin: 40px auto 0 auto;
     align-items: center;
 }
@@ -195,19 +195,53 @@
     overflow-x: hidden;
 }
 
-@media only screen and (max-width: 800px) {
-    .cards {
-        padding-top: 0;
+@media only screen and (max-width: 950px) {
+    .philosophy {
         display: block;
+        text-align: center;
+        margin: 0 auto 0 auto;
     }
+    .philosophy > div {
+        margin: auto;
+        max-width: 91%;
+        font-size: 14px;
+        padding: 20px;
+        /* Safari 3-4, iOS 1-3.2, Android 1.6- */
+        -webkit-border-radius: 20px;
+        /* Firefox 1-3.6 */
+        -moz-border-radius: 20px;
+        border-radius: 20px;
+    }
+    .philosophy > div > div {
+        font-size: 22px;
+    }
+    .philosophy > img {
+        margin-left: 0;
+        margin-top: 40px;
+        height: 430px;
+        /* Safari 3-4, iOS 1-3.2, Android 1.6- */
+        -webkit-border-radius: 20px;
+        /* Firefox 1-3.6 */
+        -moz-border-radius: 20px;
+        border-radius: 20px;
+    }
+    .bio-container {
+        max-width: 450px;
+    }
+    .bio-container > h1 {
+        font-size: 34px;
+    }
+    .bio-container > div {
+        font-size: 17px;
+    }
+}
+
+@media only screen and (max-width: 870px) {
     .home {
         display: block;
     }
     .home-first-frame {
         height: 900px;
-    }
-    .about-first-frame {
-        height: 700px;
     }
     .bio-container {
         line-height: 1.4em;
@@ -220,15 +254,6 @@
     .bio-container > div {
         font-size: 17px;
     }
-    .about-bio-container > h1 {
-        font-size: 30px;
-    }
-    .about-bio-container > div {
-        width: 92%;
-        margin: auto;
-        font-size: 15px;
-    }
-
     .images-container {
         margin: 40px auto;
         text-align: center;
@@ -242,6 +267,24 @@
     .image {
         height: 420.42px;
         overflow-x: hidden;
+    }
+    .cards {
+        padding-top: 0;
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .about-first-frame {
+        height: 700px;
+    }
+    .about-bio-container > h1 {
+        font-size: 30px;
+    }
+    .about-bio-container > div {
+        width: 92%;
+        margin: auto;
+        font-size: 15px;
     }
 
     .resume > h1 {
@@ -293,5 +336,16 @@
     }
     .contact {
         font-size: 18px;
+    }
+    .philosophy > div {
+        font-size: 12px;
+        padding: 10px;
+    }
+    .philosophy > div > div {
+        font-size: 20px;
+    }
+    .philosophy > img {
+        height: 330px;
+        margin-top: 25px;
     }
 }
