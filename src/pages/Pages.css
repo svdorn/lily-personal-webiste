@@ -6,7 +6,7 @@
 .home {
     display: inline-flex;
     max-width: 97%;
-    margin: 40px auto 0 auto;
+    margin: 20px auto 0 auto;
     align-items: center;
 }
 .first-frame-container {
@@ -239,6 +239,7 @@
 @media only screen and (max-width: 870px) {
     .home {
         display: block;
+        margin: 40px auto 0 auto;
     }
     .home-first-frame {
         height: 900px;
