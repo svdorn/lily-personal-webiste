@@ -22,7 +22,7 @@
 }
 
 .about-first-frame {
-    height: 700px;
+    height: 200px;
 }
 
 .dance-first-frame {
@@ -82,27 +82,12 @@
     color: var(--text-black);
 }
 
-.about-bio-container {
-    max-width: 800px;
-    line-height: 1.4em;
-    text-align: left;
-    margin: auto;
-}
-.about-bio-container > h1 {
-    font-size: 40px;
-    text-align: center;
-    color: var(--text-white);
-}
-.about-bio-container > div {
-    font-size: 15px;
-    color: var(--text-black);
-}
-
 .resume {
     max-width: 800px;
     line-height: 1.4em;
     text-align: center;
-    margin: 0 auto 40px auto;
+    margin: 40px auto;
+    padding-top: 40px;
 }
 .resume > h1 {
     font-size: 40px;
@@ -276,18 +261,6 @@
 }
 
 @media only screen and (max-width: 800px) {
-    .about-first-frame {
-        height: 700px;
-    }
-    .about-bio-container > h1 {
-        font-size: 30px;
-    }
-    .about-bio-container > div {
-        width: 92%;
-        margin: auto;
-        font-size: 15px;
-    }
-
     .resume > h1 {
         font-size: 30px;
     }
@@ -297,9 +270,6 @@
 }
 
 @media only screen and (max-width: 650px) {
-    .about-first-frame {
-        height: 800px;
-    }
     .video {
         height: 274.22px;
         width: 450px;
@@ -310,19 +280,10 @@
 }
 
 @media only screen and (max-width: 500px) {
-    .about-first-frame {
-        height: 950px;
-    }
     .bio-container > h1 {
         font-size: 26px;
     }
     .bio-container > div {
-        font-size: 13px;
-    }
-    .about-bio-container > h1 {
-        font-size: 26px;
-    }
-    .about-bio-container > div {
         font-size: 13px;
     }
     .resume > h1 {
