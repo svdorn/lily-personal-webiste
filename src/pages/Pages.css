@@ -54,8 +54,6 @@
     width: 2013px;
     height: 172px;
     margin-left: -1007px;
-    overflow-y: hidden;
-    overflow-x: hidden;
 }
 
 .header {
@@ -214,6 +212,9 @@
     }
     .contact {
         font-size: 18px;
+    }
+    .swirly {
+        position: relative;
     }
 }
 
