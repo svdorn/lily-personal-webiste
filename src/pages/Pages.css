@@ -54,6 +54,7 @@
     width: 2013px;
     height: 172px;
     margin-left: -1007px;
+    overflow-y: hidden;
 }
 
 .header {
