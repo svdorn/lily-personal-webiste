@@ -41,18 +41,18 @@ const Cards = () => {
     return (
         <div className="cards">
             <Card
+                img="/images/Lily/Bodyshot_1.jpg"
+                imgWidth={110}
+                title="Dance"
+                content="Lily is trained in a variety of styles since a young age, including contemporary, jazz, hip hop, modern, ballet, ballroom, and tap."
+                link="/dance"
+            />
+            <Card
                 img="/images/Chapman.jpg"
                 imgWidth={150}
                 title="Education"
                 content="Lily is studying at Chapman University where she will graduate in May with a BFA in Dance Performance and a minor in Studio Art."
                 link="/about"
-            />
-            <Card
-                img="/images/Lily/Headshot.jpg"
-                imgWidth={110}
-                title="Dance"
-                content="Lily is trained in a variety of styles since a young age, including contemporary, jazz, hip hop, modern, ballet, ballroom, and tap."
-                link="/dance"
             />
             <Card
                 img="/images/Lily/Danceshot_2.jpg"
@@ -117,16 +117,24 @@ const GoToDance = props => <Link to="/dance" {...props} />;
 
 const images = [
     {
-        label: `Headshot`,
-        imgPath: "/images/Lily/Headshot.jpg"
+        label: `Headshot_1`,
+        imgPath: "/images/Lily/Headshot_1.jpg"
     },
     {
-        label: `Bodyshot_2`,
-        imgPath: "/images/Lily/Bodyshot_2.jpg"
+        label: `Bodyshot_1`,
+        imgPath: "/images/Lily/Bodyshot_1.jpg"
     },
     {
         label: `Danceshot_1`,
         imgPath: "/images/Lily/Danceshot_1.jpg"
+    },
+    {
+        label: `Headshot_2`,
+        imgPath: "/images/Lily/Headshot_2.jpg"
+    },
+    {
+        label: `Bodyshot_2`,
+        imgPath: "/images/Lily/Bodyshot_2.jpg"
     },
     {
         label: `Danceshot_2`,

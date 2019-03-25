@@ -7,6 +7,7 @@ import Contact from "./pages/Contact";
 import Choreography from "./pages/Choreography";
 import Dance from "./pages/Dance";
 import Home from "./pages/Home";
+import Philosophy from "./pages/Philosophy";
 import { MuiThemeProvider, createMuiTheme } from "@material-ui/core";
 import ScrollToTop from "react-router-scroll-top";
 
@@ -36,6 +37,7 @@ const App = () => (
                     <Route path="/contact" component={Contact} />
                     <Route path="/choreography" component={Choreography} />
                     <Route path="/dance" component={Dance} />
+                    <Route path="/philosophy" component={Philosophy} />
                 </div>
 
                 <Footer />
