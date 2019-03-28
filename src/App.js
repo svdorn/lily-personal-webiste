@@ -6,6 +6,7 @@ import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Choreography from "./pages/Choreography";
 import Dance from "./pages/Dance";
+import Gallery from "./pages/Gallery";
 import Home from "./pages/Home";
 import Philosophy from "./pages/Philosophy";
 import { MuiThemeProvider, createMuiTheme } from "@material-ui/core";
@@ -37,6 +38,7 @@ const App = () => (
                     <Route path="/contact" component={Contact} />
                     <Route path="/choreography" component={Choreography} />
                     <Route path="/dance" component={Dance} />
+                    <Route path="/gallery" component={Gallery} />
                     <Route path="/philosophy" component={Philosophy} />
                 </div>
 

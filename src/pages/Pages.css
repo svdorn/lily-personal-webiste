@@ -155,6 +155,21 @@
     border-radius: 25px;
 }
 
+.gallery {
+    display: block;
+}
+.gallery-row {
+    margin-bottom: 50px;
+}
+.gallery-image-container {
+    display: inline-flex;
+    flex-wrap: wrap;
+}
+.gallery-image {
+    height: 250px;
+    margin: auto 15px;
+}
+
 .button-container {
     margin-top: 25px;
 }
