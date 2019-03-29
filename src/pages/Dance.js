@@ -9,7 +9,7 @@ class Dance extends React.Component {
         return (
             <div className="container">
                 <div className="first-frame-container dance-first-frame">
-                    <h1 className="header">Let{"'"}s Dance</h1>
+                    <h1 className="header">Dance</h1>
                     <Swirl />
                 </div>
                 <div className="videos">
