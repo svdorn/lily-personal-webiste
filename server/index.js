@@ -6,8 +6,6 @@ var path = require("path");
 var http = require("http");
 //PROXY
 var httpProxy = require("http-proxy");
-// REQUEST HANDLER FOR SERVER-SIDE RENDERING
-var requestHandler = require("./requestHandler.js");
 
 var port = process.env.PORT || 3001;
 
