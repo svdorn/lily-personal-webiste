@@ -39,7 +39,7 @@ a {
 }
 
 .desktop-menu > a:hover {
-    background-color: var(--secondary-lavender);
+    background-color: var(--secondary-purple);
     border-radius: 5px;
 }
 .desktop-menu > a > div.selected {

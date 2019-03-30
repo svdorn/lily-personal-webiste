@@ -43,7 +43,7 @@ class Contact extends React.Component {
                 <div className="contact-form">
                     <div>
                         <img src="/images/Lily/Headshot_1.jpg" alt="Lily Thongnuam" />
-                        <div>
+                        <div className="contact-social-links">
                             <SocialLinks />
                         </div>
                     </div>
