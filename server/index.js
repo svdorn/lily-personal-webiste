@@ -2,7 +2,7 @@ const express = require("express");
 const bodyParser = require("body-parser");
 const pino = require("express-pino-logger")();
 const nodemailer = require("nodemailer");
-const credentials = require("./credentials");
+const credentials = require("./credentials.js");
 var http = require("http");
 
 var port = process.env.PORT || 3001;
