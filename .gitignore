@@ -3,7 +3,7 @@
 # dependencies
 /node_modules
 .env
-credentials.js
+/server/credentials.js
 
 # Elastic Beanstalk Files
 .elasticbeanstalk/*
