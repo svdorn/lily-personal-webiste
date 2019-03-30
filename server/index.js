@@ -23,6 +23,7 @@ server.on("listening", onListening);
 
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(pino);
+app.use(express.static(path.join(__dirname, "public")));
 
 const transporter = nodemailer.createTransport({
     service: "gmail",
