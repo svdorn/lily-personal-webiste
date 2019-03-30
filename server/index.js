@@ -7,6 +7,7 @@ const credentials = require("../credentials");
 const app = express();
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(pino);
+app.use("/", express.static("build"));
 
 const transporter = nodemailer.createTransport({
     service: "gmail",
