@@ -1,4 +1,5 @@
 import React from "react";
+import Button from "@material-ui/core/Button";
 import Swirl from "../components/Swirl";
 import SocialLinks from "../components/SocialLinks";
 import TextField from "@material-ui/core/TextField";
@@ -8,16 +9,25 @@ import "./Pages.css";
 class Contact extends React.Component {
     state = {
         name: "",
-        email: ""
+        email: "",
+        subject: "",
+        message: ""
     };
 
-    onClick = () => {
-        fetch("/api/contact?name=Steve", {
+    handleClick = () => {
+        const { name, email, subject, message } = this.state;
+        fetch(`/api/contact?name=${name}&email=${email}&subject=${subject}&message=${message}`, {
             method: "POST"
         });
     };
 
     handleNameChange = name => event => {
+        this.setState({
+            [name]: event.target.value
+        });
+    };
+
+    handleChange = name => event => {
         this.setState({
             [name]: event.target.value
         });
@@ -30,29 +40,53 @@ class Contact extends React.Component {
                     <h1 className="header">Contact Lily</h1>
                     <Swirl />
                 </div>
-                <TextField
-                    id="outlined-with-placeholder"
-                    label="Placeholder"
-                    placeholder="Placeholder"
-                    variant="outlined"
-                    value={this.state.name}
-                    onChange={this.handleNameChange("name")}
-                />
-                <div className="contact">
+                <div className="contact-form">
                     <div>
-                        <div onClick={this.onClick}>
-                            <b>Email: lilythongnuam@gmail.com</b>
-                        </div>
+                        <img src="/images/Lily/Headshot_1.jpg" alt="Lily Thongnuam" />
                         <div>
-                            <b>Phone: (608)-575-8565</b>
-                        </div>
-                        <div>
-                            <b>Instagram: @lilythongnuam</b>
+                            <SocialLinks />
                         </div>
                     </div>
-                    <img src="/images/Lily/Headshot_1.jpg" alt="Lily Thongnuam" />
                     <div>
-                        <SocialLinks />
+                        <TextField
+                            id="outlined-with-placeholder"
+                            className="text-field"
+                            label="Name"
+                            variant="outlined"
+                            value={this.state.name}
+                            onChange={this.handleChange("name")}
+                        />
+                        <TextField
+                            id="outlined-with-placeholder"
+                            className="text-field"
+                            label="Email"
+                            variant="outlined"
+                            value={this.state.email}
+                            onChange={this.handleChange("email")}
+                        />
+                        <TextField
+                            id="outlined-with-placeholder"
+                            className="text-field"
+                            label="Subject"
+                            variant="outlined"
+                            value={this.state.subject}
+                            onChange={this.handleChange("subject")}
+                        />
+                        <TextField
+                            id="outlined-with-placeholder"
+                            className="text-field-multiline"
+                            rows="4"
+                            label="Message"
+                            variant="outlined"
+                            multiline
+                            value={this.state.message}
+                            onChange={this.handleChange("message")}
+                        />
+                        <div className="form-button-container">
+                            <Button className="form-button" onClick={this.handleClick} size="large">
+                                Send
+                            </Button>
+                        </div>
                     </div>
                 </div>
             </div>

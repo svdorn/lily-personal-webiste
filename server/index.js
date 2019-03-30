@@ -17,13 +17,18 @@ const transporter = nodemailer.createTransport({
 });
 
 app.post("/api/contact", (req, res) => {
-    const { name } = req.query;
+    const { name, email, subject, message } = req.query;
 
     const mailOptions = {
         from: "stevedorn9@gmail.com",
         to: "stevedorn9@gmail.com",
         subject: "Contact from Your Website",
-        text: `name: ${name}`
+        html: `<div style="max-width: 550px;text-align: center;margin: auto;">
+        <h3>Contact from Your Website</h3>
+        <p>name: ${name}</p>
+        <p>email: ${email}</p>
+        <p>subject: ${subject}</p>
+        <p>message: ${message}</p></div>`
     };
     transporter.sendMail(mailOptions, function(error, info) {
         if (error) {
