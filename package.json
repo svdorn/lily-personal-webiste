@@ -13,7 +13,10 @@
         "react-scripts": "1.1.1",
         "react-scroll": "^1.7.11",
         "react-swipeable-views": "^0.13.1",
-        "react-youtube": "^7.9.0"
+        "react-youtube": "^7.9.0",
+        "body-parser": "^1.18.3",
+        "express": "^4.16.4",
+        "express-pino-logger": "^4.0.0"
     },
     "scripts": {
         "start": "react-scripts start & node ./server/index.js",
@@ -24,9 +27,6 @@
         "dev": "run-p server start"
     },
     "devDependencies": {
-        "body-parser": "^1.18.3",
-        "express": "^4.16.4",
-        "express-pino-logger": "^4.0.0",
         "node-env-run": "^3.0.2",
         "nodemon": "^1.18.10",
         "npm-run-all": "^4.1.5",
