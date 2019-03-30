@@ -2,7 +2,10 @@ const express = require("express");
 const path = require("path");
 const app = express();
 const nodemailer = require("nodemailer");
-var app = express();
+
+var port = process.env.PORT || 3001;
+app.set("port", port);
+console.log("here1: ");
 
 app.use(express.static(path.join(__dirname, "build")));
 
@@ -19,6 +22,7 @@ const transporter = nodemailer.createTransport({
 });
 
 app.post("/api/contact", (req, res) => {
+    console.log("here: ");
     const { name, email, subject, message } = req.query;
 
     const mailOptions = {
