@@ -2,7 +2,6 @@ const express = require("express");
 const bodyParser = require("body-parser");
 const pino = require("express-pino-logger")();
 const nodemailer = require("nodemailer");
-const credentials = require("./credentials.js");
 var http = require("http");
 
 var port = process.env.PORT || 3001;
@@ -29,8 +28,8 @@ app.use("/", express.static("build"));
 const transporter = nodemailer.createTransport({
     service: "gmail",
     auth: {
-        user: credentials.emailUsername,
-        pass: credentials.emailPassword
+        user: "moonshot.no.reply@gmail.com",
+        pass: "rainbowDash64!!!JON_SNOW"
     }
 });
 
