@@ -19,7 +19,7 @@
         "express-pino-logger": "^4.0.0"
     },
     "scripts": {
-        "start": "react-scripts start & node ./server/index.js",
+        "start": "react-scripts start & node ./server.js",
         "build": "react-scripts build",
         "test": "react-scripts test --env=jsdom",
         "eject": "react-scripts eject",
