@@ -1,13 +1,25 @@
 import React from "react";
 import Swirl from "../components/Swirl";
 import SocialLinks from "../components/SocialLinks";
+import TextField from "@material-ui/core/TextField";
 
 import "./Pages.css";
 
 class Contact extends React.Component {
+    state = {
+        name: "",
+        email: ""
+    };
+
     onClick = () => {
         fetch("/api/contact?name=Steve", {
             method: "POST"
+        });
+    };
+
+    handleNameChange = name => event => {
+        this.setState({
+            [name]: event.target.value
         });
     };
 
@@ -18,6 +30,14 @@ class Contact extends React.Component {
                     <h1 className="header">Contact Lily</h1>
                     <Swirl />
                 </div>
+                <TextField
+                    id="outlined-with-placeholder"
+                    label="Placeholder"
+                    placeholder="Placeholder"
+                    variant="outlined"
+                    value={this.state.name}
+                    onChange={this.handleNameChange("name")}
+                />
                 <div className="contact">
                     <div>
                         <div onClick={this.onClick}>
