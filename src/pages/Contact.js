@@ -5,6 +5,12 @@ import SocialLinks from "../components/SocialLinks";
 import "./Pages.css";
 
 class Contact extends React.Component {
+    onClick = () => {
+        fetch("/api/contact?name=Steve", {
+            method: "POST"
+        });
+    };
+
     render() {
         return (
             <div className="container">
@@ -14,7 +20,7 @@ class Contact extends React.Component {
                 </div>
                 <div className="contact">
                     <div>
-                        <div>
+                        <div onClick={this.onClick}>
                             <b>Email: lilythongnuam@gmail.com</b>
                         </div>
                         <div>

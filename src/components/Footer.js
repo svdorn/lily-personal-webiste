@@ -35,7 +35,7 @@ class Footer extends Component {
                     <Link to="/">
                         <b>Lily Thongnuam</b>
                     </Link>
-                    <div styleName="footer-links">
+                    <div className="footer-links">
                         <SocialLinks />
                     </div>
                 </div>
