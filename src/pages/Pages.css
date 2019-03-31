@@ -209,7 +209,7 @@
 }
 .gallery-image {
     height: 250px;
-    margin: auto 15px;
+    margin: 15px 25px;
     cursor: pointer;
     box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.2);
     -moz-box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.2);
