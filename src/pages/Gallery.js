@@ -31,10 +31,28 @@ const imgs = [
         images: ["Art/Turtle.jpg", "Pictures/Glitter_2.jpg", "Pictures/Gray_3.jpg"]
     },
     {
-        images: ["Pictures/Gray_4.jpg", "Pictures/Sunset_3.jpg", "Pictures/Glitter_2.jpg"]
+        images: ["Pictures/Gray_4.jpg", "Pictures/Sunset_3.jpg", "Pictures/Glitter_1.jpg"]
     },
     {
-        images: ["Pictures/Sunset_3.jpg", "Pictures/Headshot.jpg"]
+        images: ["Pictures/Headshot.jpg", "Art/Colorful.jpg", "Art/Monkeys.jpg"]
+    },
+    {
+        images: ["Art/Person.jpg", "Art/Rose.jpg", "Art/Schmear.jpg"]
+    },
+    {
+        images: ["Art/Wolf.jpg", "Pictures/Cast.jpg", "Pictures/Intense.jpg"]
+    },
+    {
+        images: ["Pictures/Cirque_1.jpg", "Pictures/Cirque_2.jpg", "Pictures/Cirque_3.jpg"]
+    },
+    {
+        images: ["Pictures/Harmony_1.jpeg", "Pictures/Harmony_2.jpeg", "Pictures/Jumps.jpg"]
+    },
+    {
+        images: ["Pictures/Jump_1.jpg", "Pictures/Jump_2.jpg", "Pictures/Kick.jpg"]
+    },
+    {
+        images: ["Pictures/PurpleDress.jpg", "Pictures/Stage_21.jpeg", "Pictures/WhiteDress.jpg"]
     }
 ];
 

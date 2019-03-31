@@ -126,6 +126,8 @@
 .text-field {
     display: block !important;
     margin: 20px auto !important;
+    width: 250px;
+    max-width: 250px;
 }
 
 .form-button-container {
