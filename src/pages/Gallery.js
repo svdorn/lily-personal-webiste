@@ -19,40 +19,52 @@ class Gallery extends React.Component {
 
 const imgs = [
     {
-        images: ["Pictures/Sunset_1.jpeg", "Pictures/Falling.jpg", "Pictures/BrickWall.jpg"]
+        images: ["Pictures/Snake.jpg", "Pictures/Intense.jpg", "Pictures/BrickWall_2.jpg"] //
     },
     {
-        images: ["Pictures/Gray_1.jpg", "Art/Flower.jpg", "Pictures/Danceshot.jpg"]
+        images: ["Pictures/WhiteDress.jpg", "Art/Monkeys.jpg"] //
     },
     {
-        images: ["Pictures/Sunset_2.jpg", "Pictures/Gray_2.jpg", "Art/Faces.jpg"]
+        images: ["Pictures/Gray_1.jpg", "Pictures/Gray_2.jpg", "Pictures/Gray_3.jpg"] //
     },
     {
-        images: ["Art/Turtle.jpg", "Pictures/Glitter_2.jpg", "Pictures/Gray_3.jpg"]
+        images: ["Art/Colorful.jpg", "Art/Schmear.jpg"] //
     },
     {
-        images: ["Pictures/Gray_4.jpg", "Pictures/Sunset_3.jpg", "Pictures/Glitter_1.jpg"]
+        images: ["Pictures/Cirque_2.jpg", "Pictures/Cirque_3.jpg", "Pictures/Cirque_1.jpg"] //
     },
     {
-        images: ["Pictures/Headshot.jpg", "Art/Colorful.jpg", "Art/Monkeys.jpg"]
+        images: ["Pictures/Sunset_3.jpg", "Pictures/Sunset_1.jpeg"] //
     },
     {
-        images: ["Art/Person.jpg", "Art/Rose.jpg", "Art/Schmear.jpg"]
+        images: ["Pictures/Glitter_1.jpg", "Pictures/Kick.jpg", "Pictures/Glitter_2.jpg"] //
     },
     {
-        images: ["Art/Wolf.jpg", "Pictures/Cast.jpg", "Pictures/Intense.jpg"]
+        images: ["Art/Person.jpg", "Art/Rose.jpg"] //
     },
     {
-        images: ["Pictures/Cirque_1.jpg", "Pictures/Cirque_2.jpg", "Pictures/Cirque_3.jpg"]
+        images: ["Pictures/Harmony_1.jpeg", "Pictures/Lift.jpg", "Pictures/Harmony_2.jpeg"] //
     },
     {
-        images: ["Pictures/Harmony_1.jpeg", "Pictures/Harmony_2.jpeg", "Pictures/Jumps.jpg"]
+        images: ["Pictures/Jump_1.jpg", "Pictures/Jump_2.jpg"] //
     },
     {
-        images: ["Pictures/Jump_1.jpg", "Pictures/Jump_2.jpg", "Pictures/Kick.jpg"]
+        images: ["Art/Faces.jpg", "Art/Turtle.jpg", "Art/Flower.jpg"] //
     },
     {
-        images: ["Pictures/PurpleDress.jpg", "Pictures/Stage_21.jpeg", "Pictures/WhiteDress.jpg"]
+        images: ["Pictures/Jumps.jpg", "Pictures/Cast.jpg"]
+    },
+    {
+        images: ["Pictures/Yoga.jpg", "Pictures/PurpleDress.jpg", "Pictures/Danceshot.jpg"] //
+    },
+    {
+        images: ["Pictures/Gray_4.jpg", "Pictures/Stage_21.jpeg"]
+    },
+    {
+        images: ["Pictures/Group.jpg", "Pictures/Sunset_2.jpg", "Pictures/ColorWall.jpg"]
+    },
+    {
+        images: ["Art/Wolf.jpg", "Pictures/BrickWall.jpg"]
     }
 ];
 
