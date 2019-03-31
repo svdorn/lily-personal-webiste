@@ -12,7 +12,15 @@ const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
 
 class Home extends React.Component {
     state = {
-        activeStep: 0
+        activeStep: 0,
+        fade: false
+    };
+
+    componentDidMount = () => {
+        let self = this;
+        setTimeout(function() {
+            self.setState({ fade: true });
+        }, 3000);
     };
 
     handleStepChange = activeStep => {
@@ -20,15 +28,13 @@ class Home extends React.Component {
     };
 
     render() {
-        const { activeStep } = this.state;
+        const { activeStep, fade } = this.state;
+
+        const imageFade = fade ? "image-home-fade" : "";
 
         return (
             <div className="container">
-                <img
-                    src="/images/Falling.jpg"
-                    style={{ minHeight: "100vh", width: "100%", zIndex: "1000" }}
-                    className="image-home image-home-fade"
-                />
+                <img src="/images/Falling.jpg" className={"image-home " + imageFade} />
                 <div className="first-frame-container home-first-frame">
                     <div className="home">
                         <Bio />
