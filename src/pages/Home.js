@@ -33,7 +33,7 @@ class Home extends React.Component {
         const imageFade = fade ? "image-home-fade" : "";
 
         let coverImg = "Cover.jpg";
-        if (window.width < 800) {
+        if (window.innerWidth < 800) {
             coverImg = "Cover-Mobile.jpg";
         }
 
