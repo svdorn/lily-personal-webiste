@@ -32,9 +32,14 @@ class Home extends React.Component {
 
         const imageFade = fade ? "image-home-fade" : "";
 
+        let coverImg = "Cover.jpg";
+        if (window.width < 800) {
+            coverImg = "Cover-Mobile.jpg";
+        }
+
         return (
             <div className="container">
-                <img src="/images/Cover.jpg" className={"image-home " + imageFade} />
+                <img src={`/images/${coverImg}`} className={"image-home " + imageFade} />
                 <div className="first-frame-container home-first-frame">
                     <div className="home">
                         <Bio />
