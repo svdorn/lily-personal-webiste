@@ -4,14 +4,23 @@ import Swirl from "../components/Swirl";
 import "./Pages.css";
 
 class Gallery extends React.Component {
+    state = {
+        image: null
+    };
+
+    handleClick = image => {
+        this.setState({ image });
+    };
+
     render() {
+        console.log("image: ", this.state.image);
         return (
             <div className="container">
                 <div className="first-frame-container dance-first-frame">
                     <h1 className="header">Gallery</h1>
                     <Swirl />
                 </div>
-                <GallaryImages />
+                <GallaryImages handleClick={this.handleClick} />
             </div>
         );
     }
@@ -68,28 +77,28 @@ const imgs = [
     }
 ];
 
-const GallaryImages = () => {
+const GallaryImages = ({ handleClick }) => {
     return (
         <div className="gallery">
             {imgs.map(row => {
-                return <Row images={row} />;
+                return <Row images={row} handleClick={handleClick} />;
             })}
         </div>
     );
 };
 
-const Row = ({ images }) => {
+const Row = ({ images, handleClick }) => {
     return (
         <div className="gallery-row">
             {images.images.map(img => {
-                return <Image image={img} />;
+                return <Image image={img} handleClick={handleClick} />;
             })}
         </div>
     );
 };
 
-const Image = ({ image }) => (
-    <div className="gallery-image-container">
+const Image = ({ image, handleClick }) => (
+    <div className="gallery-image-container" onClick={() => handleClick(image)}>
         <img src={`/images/Gallery/${image}`} alt={image} className="gallery-image" />
     </div>
 );
