@@ -9,6 +9,15 @@
     margin: 20px auto 0 auto;
     align-items: center;
 }
+.image-home {
+    visibility: visible;
+    opacity: 1;
+}
+.image-home-fade {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s 2s, opacity 2s linear;
+}
 .first-frame-container {
     position: relative;
     overflow: hidden;

@@ -24,6 +24,11 @@ class Home extends React.Component {
 
         return (
             <div className="container">
+                <img
+                    src="/images/Falling.jpg"
+                    style={{ minHeight: "100vh", width: "100%", zIndex: "1000" }}
+                    className="image-home image-home-fade"
+                />
                 <div className="first-frame-container home-first-frame">
                     <div className="home">
                         <Bio />
