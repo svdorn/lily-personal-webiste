@@ -20,7 +20,7 @@ class Home extends React.Component {
         let self = this;
         setTimeout(function() {
             self.setState({ fade: true });
-        }, 3000);
+        }, 2000);
     };
 
     handleStepChange = activeStep => {
