@@ -20,7 +20,7 @@ class Home extends React.Component {
         let self = this;
         setTimeout(function() {
             self.setState({ fade: true });
-        }, 2000);
+        }, 3000);
     };
 
     handleStepChange = activeStep => {
@@ -34,7 +34,7 @@ class Home extends React.Component {
 
         return (
             <div className="container">
-                <img src="/images/Falling.jpg" className={"image-home " + imageFade} />
+                <img src="/images/Cover.jpg" className={"image-home " + imageFade} />
                 <div className="first-frame-container home-first-frame">
                     <div className="home">
                         <Bio />

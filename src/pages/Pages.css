@@ -21,7 +21,7 @@
 .image-home-fade {
     visibility: hidden;
     opacity: 0;
-    transition: visibility 4s 8s, opacity 2s linear;
+    transition: visibility 10s 20s, opacity 2s linear;
 }
 .first-frame-container {
     position: relative;
