@@ -10,7 +10,6 @@ a {
     color: var(--text-black);
     background-color: var(--primary-purple);
     z-index: 100;
-    display: none;
 }
 
 .menu > div:first-child {
