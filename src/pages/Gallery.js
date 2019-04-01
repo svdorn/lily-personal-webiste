@@ -311,7 +311,7 @@ const ImgDialog = ({ image, handleClose, open }) => {
             className="gallery-dialog"
             style={{ width: description && description.description ? description.width : null }}
         >
-            <img src={`/images/Gallery/${image}`} className="gallery-dialog-img" />
+            <img src={`/images/Gallery/${image}`} className="gallery-dialog-img" alt={image} />
             {description && description.description ? (
                 <div className="gallery-dialog-description">{description.description}</div>
             ) : null}

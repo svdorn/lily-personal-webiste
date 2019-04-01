@@ -1,5 +1,4 @@
 import React from "react";
-import Paper from "@material-ui/core/Paper";
 import Swirl from "../components/Swirl";
 import YouTube from "react-youtube";
 
