@@ -152,8 +152,15 @@ class Header extends Component {
     }
 
     render() {
+        let backgroundColor = "#c1b7ca";
+        let textColor = "#272727";
+        //if (this.props.location && this.props.location.pathname === "/") {
+        console.log("here");
+        backgroundColor = "transparent";
+        textColor = "#fffafa";
+        //}
         return (
-            <div className="menu">
+            <div className="menu" style={{ backgroundColor: backgroundColor, color: textColor }}>
                 <div>
                     <Link to="/">
                         <b>Lily Thongnuam</b>

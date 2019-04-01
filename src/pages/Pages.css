@@ -9,38 +9,29 @@
     margin: 20px auto 0 auto;
     align-items: center;
 }
-.image-home {
-    position: absolute;
-    top: 0;
-    display: block;
-    opacity: 1;
-    height: 100vh;
-    width: 100%;
-    z-index: 1000;
-}
-.image-home-fade {
-    visibility: hidden;
-    opacity: 0;
-    transition: visibility 0s 5s, opacity 2s linear;
-}
+
 .first-frame-container {
     position: relative;
     overflow: hidden;
-    background-color: var(--primary-purple);
+    background-size: cover; /* Resize the background image to cover the entire container */
+    background-position: center; /* Center the image */
     padding-top: 100px;
     width: 100%;
 }
 
 .home-first-frame {
-    height: 730px;
+    height: 600px;
+    background-image: url("/images/Opener.jpg");
 }
 
 .about-first-frame {
-    height: 200px;
+    height: 400px;
+    background-image: url("/images/Gallery/Pictures/Gray_1.jpg");
 }
 
 .dance-first-frame {
-    height: 200px;
+    height: 400px;
+    background-image: url("/images/Gallery/Pictures/Gray_1.jpg");
 }
 
 .philosophy-first-frame {
@@ -48,7 +39,7 @@
 }
 
 .cards {
-    padding-top: 50px;
+    padding-top: 90px;
     padding-bottom: 50px;
     display: inline-flex;
 }

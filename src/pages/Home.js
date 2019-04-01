@@ -12,15 +12,7 @@ const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
 
 class Home extends React.Component {
     state = {
-        activeStep: 0,
-        fade: false
-    };
-
-    componentDidMount = () => {
-        let self = this;
-        setTimeout(function() {
-            self.setState({ fade: true });
-        }, 3000);
+        activeStep: 0
     };
 
     handleStepChange = activeStep => {
@@ -28,9 +20,7 @@ class Home extends React.Component {
     };
 
     render() {
-        const { activeStep, fade } = this.state;
-
-        const imageFade = fade ? "image-home-fade" : "";
+        const { activeStep } = this.state;
 
         let coverImg = "Cover.jpg";
         if (window.innerWidth < 800) {
@@ -39,13 +29,12 @@ class Home extends React.Component {
 
         return (
             <div className="container">
-                <img src={`/images/${coverImg}`} alt="Cover" className={"image-home " + imageFade} />
                 <div className="first-frame-container home-first-frame">
-                    <div className="home">
-                        <Bio />
-                        <Images activeStep={activeStep} handleStepChange={this.handleStepChange} />
-                        <Swirl />
-                    </div>
+                    <Swirl />
+                </div>
+                <div className="home">
+                    <Bio />
+                    <Images activeStep={activeStep} handleStepChange={this.handleStepChange} />
                 </div>
                 <Cards />
             </div>
@@ -84,7 +73,6 @@ const Cards = () => {
 const Bio = () => {
     return (
         <div className="bio-container">
-            <h1>Lily Thongnuam</h1>
             <div>
                 Lily is currently graduating with a Bachelor of Fine Arts in dance performance and a
                 minor in studio art at Chapman University. Lily can be seen as a featured dancer on

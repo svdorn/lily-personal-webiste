@@ -7,8 +7,6 @@ a {
     position: absolute;
     top: 0;
     width: 100%;
-    color: var(--text-black);
-    background-color: var(--primary-purple);
     z-index: 100;
 }
 
