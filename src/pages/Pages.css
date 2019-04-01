@@ -14,7 +14,7 @@
     top: 0;
     display: block;
     opacity: 1;
-    min-height: 100vh;
+    height: 100vh;
     width: 100%;
     z-index: 1000;
 }

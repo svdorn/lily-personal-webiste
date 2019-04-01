@@ -39,7 +39,7 @@ class Home extends React.Component {
 
         return (
             <div className="container">
-                <img src={`/images/${coverImg}`} className={"image-home " + imageFade} />
+                <img src={`/images/${coverImg}`} alt="Cover" className={"image-home " + imageFade} />
                 <div className="first-frame-container home-first-frame">
                     <div className="home">
                         <Bio />
