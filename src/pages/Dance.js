@@ -1,4 +1,5 @@
 import React from "react";
+import Paper from "@material-ui/core/Paper";
 import Swirl from "../components/Swirl";
 import YouTube from "react-youtube";
 
@@ -10,6 +11,11 @@ class Dance extends React.Component {
             <div className="container">
                 <div className="first-frame-container dance-first-frame">
                     <h1 className="header">Dance</h1>
+                    <div className="intro">
+                        Lily has experience in both the commercial and concert side of dance. She is
+                        well trained in a variety of styles, including hip hop, jazz, contemporary,
+                        ballroom, modern, and ballet. Check out some some of her experience below!
+                    </div>
                     <Swirl />
                 </div>
                 <div className="videos">

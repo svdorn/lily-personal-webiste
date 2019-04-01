@@ -17,7 +17,7 @@ import "./App.css";
 const typography = { fontFamily: '"Muli", sans-serif', useNextVariants: true };
 const palette = {
     primary: {
-        main: "#C1B7CA"
+        main: "#B0B6CF"
     },
     secondary: {
         main: "#000000"

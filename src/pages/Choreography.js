@@ -10,6 +10,13 @@ class Choreography extends React.Component {
             <div className="container">
                 <div className="first-frame-container choreography-first-frame">
                     <h1 className="header">Choreography</h1>
+                    <div className="intro">
+                        From a young age, Lily has had a passion for choreographing her own dance
+                        works. She has had the opportunity to create work through a variety of
+                        mediums, including television, short films, and dance concerts. She has also
+                        set pieces on multiple studios from her hometown, including large and small
+                        group pieces and solos. Check out some of her work below!
+                    </div>
                     <Swirl />
                 </div>
                 <div className="videos">

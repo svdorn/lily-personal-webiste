@@ -34,7 +34,7 @@ class Contact extends React.Component {
         return (
             <div className="container">
                 <div className="first-frame-container dance-first-frame">
-                    <h1 className="header">Contact Lily</h1>
+                    <h1 className="header">Let{"'"}s Connect</h1>
                     <Swirl />
                 </div>
                 <div className="contact-form">

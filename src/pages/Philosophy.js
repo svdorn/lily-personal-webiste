@@ -12,6 +12,8 @@ class Philosophy extends React.Component {
                     <h1 className="header">Philosophy</h1>
                     <Swirl />
                 </div>
+                <Quote />
+                <Teaching />
                 <div className="philosophy">
                     <ArtistStatement />
                     <img src="/images/Lily/Danceshot_1.jpg" alt="Danceshot_1" />
@@ -21,6 +23,31 @@ class Philosophy extends React.Component {
     }
 }
 
+const Quote = () => (
+    <div className="philosophy-quote">
+        <i>
+            “I believe it’s important to pass along my knowledge to others who share the same
+            passion as me. My goal as a teacher is to make sure that every single student gets
+            something out of my class. I strive to create a safe, freeing, and motivating
+            environment that allows fellow artists to grow.”
+        </i>
+    </div>
+);
+
+const Teaching = () => (
+    <Paper elevation={3} square={false} className="teaching">
+        <div>
+            <b>Teaching</b>
+        </div>
+        <p>
+            Whether it’s instructing yoga or teaching dance, Lily has worked with a wide range of
+            ages and levels. Her knowledge of training, technique, choreography, and leadership
+            skills have lead her to work in many settings, such as being captain of her high school
+            dance team. Feel free to reach out to her about bookings or any other questions!
+        </p>
+    </Paper>
+);
+
 const ArtistStatement = () => (
     <Paper elevation={3} square={false}>
         <div>
@@ -29,14 +56,13 @@ const ArtistStatement = () => (
         <p>
             As I walk on stage, I feel my heart beat fast. My senses awaken and adrenaline rushes
             through my blood. The music plays, and I come alive as I express myself through my body
-            language. I open myself up to the audience and allow myself to evoke true emotions that
-            create the artistic vision that I portray. As a dancer, I strive to connect and
-            communicate with others in my movement. There is no better feeling in this world that
-            compares to when I am dancing. No matter where I am, no matter how casual or formal it
-            is, I make sure every movement is personal. Because I am generating movement through my
-            entire body, there is no single performance that is the exact same. There is always
-            something new that I explore through this artform, which makes it so therapeutic and
-            meditative for me.
+            language. I open up to the audience and allow myself to evoke true emotions through my
+            body’s creations. As an artist, I strive to connect and communicate with others with my
+            movement. There is no better feeling in this world that compares to when I am dancing.
+            No matter where I am, no matter how casual or formal it is, I make sure every movement
+            is personal. Because I am generating movement through my entire body, there is no single
+            performance that is the exact same. There is always something new that I explore through
+            every artform, which makes it so therapeutic and meditative for me.
         </p>
         <p>
             Every time I dance, I investigate and travel through space in ways that feel natural to
@@ -46,14 +72,14 @@ const ArtistStatement = () => (
         </p>
         <p>
             {" "}
-            Along with dance, I am well versed in other artforms, such as painting, drawing, and
-            ceramics. I am constantly inspired by the energy and movement that I find in these
-            artforms and use them and dance to feed off each other and create my own art. Like every
-            paint stroke on a painting, my body makes vibrant colors and marks through the space.
-            Although all artforms are near to my heart, I see dance as a something very special
-            because it encompasses all other artforms. I generate movement with my body when I dance
-            that creates auditory, visual, and physical art. It is an entirely unique form of art
-            and movement that expresses who I am as a human being.
+            Along with dance, I am well versed in other artforms, such as painting, drawing,
+            ceramics, and music. I am constantly inspired by the energy and movement that I find in
+            these artforms and use them and dance to feed off each other and create my own art. Like
+            every paint stroke on a painting, my body makes vibrant colors and marks through the
+            space. Although all artforms are near to my heart, I see dance as a something very
+            special because it encompasses all other artforms. I generate movement with my body when
+            I dance that creates auditory, visual, and physical art. It is an entirely unique form
+            of art and movement that expresses who I am as a human being.
         </p>
     </Paper>
 );
