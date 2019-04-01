@@ -8,7 +8,6 @@ import Choreography from "./pages/Choreography";
 import Dance from "./pages/Dance";
 import Gallery from "./pages/Gallery";
 import Home from "./pages/Home";
-import ImageHome from "./pages/ImageHome";
 import Philosophy from "./pages/Philosophy";
 import { MuiThemeProvider, createMuiTheme } from "@material-ui/core";
 import ScrollToTop from "react-router-scroll-top";
