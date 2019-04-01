@@ -14,10 +14,10 @@ a {
 
 .menu > div:first-child {
     color: var(--text-white);
-    font-size: 30px;
-    margin: 15px 20px 0 20px;
+    font-size: 28px;
+    margin: 20px 20px 0 20px;
     display: inline-block;
-    font-family: "Coronetscript", cursive;
+    font-family: Impact, Charcoal, sans-serif;
 }
 .desktop-menu {
     float: right;
@@ -59,12 +59,12 @@ a {
     display: inline-block;
 }
 
-@media only screen and (min-width: 1051px) {
+@media only screen and (min-width: 1171px) {
     .mobile-menu {
         display: none;
     }
 }
-@media only screen and (max-width: 1050px) {
+@media only screen and (max-width: 1170px) {
     .desktop-menu {
         display: none;
     }
