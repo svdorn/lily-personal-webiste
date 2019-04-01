@@ -412,6 +412,25 @@
     .bio-container > div {
         font-size: 17px;
     }
+    .home-first-frame {
+        background-image: url("/images/Opener-mobile.jpeg");
+    }
+
+    .about-first-frame {
+        background-image: url("/images/1-5-mobile.jpeg");
+    }
+
+    .dance-first-frame {
+        background-image: url("/images/1-7-mobile.jpeg");
+    }
+
+    .choreography-first-frame {
+        background-image: url("/images/1-8-mobile.jpeg");
+    }
+
+    .gallery-first-frame {
+        background-image: url("/images/1-9-mobile.jpeg");
+    }
 }
 
 @media only screen and (max-width: 870px) {
