@@ -44,7 +44,7 @@ class Contact extends React.Component {
                     <div>
                         <img src="/images/Lily/Headshot_1.jpg" alt="Lily Thongnuam" />
                         <div className="contact-social-links">
-                            <SocialLinks />
+                            <SocialLinks extras={true} />
                         </div>
                     </div>
                     <div>

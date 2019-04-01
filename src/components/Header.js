@@ -118,7 +118,7 @@ class Header extends Component {
                     );
                 })}
                 <div>
-                    <SocialLinks />
+                    <SocialLinks extras={false} />
                 </div>
             </div>
         );

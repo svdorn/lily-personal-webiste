@@ -129,6 +129,7 @@
 
 .contact-form {
     display: inline-flex;
+    flex-wrap: wrap-reverse;
 }
 .contact-header {
     padding-bottom: 25px;
@@ -149,7 +150,9 @@
 }
 
 .contact-form > div {
-    margin: auto 40px;
+    margin: auto;
+    padding-left: 40px;
+    padding-right: 40px;
 }
 
 .text-field {
@@ -288,11 +291,8 @@
     margin-top: 25px;
 }
 .button {
-    background-color: var(--text-white) !important;
-    color: var(--text-black) !important;
-}
-.button:hover {
-    background-color: var(--primary-color) !important;
+    background-color: var(--primary-purple) !important;
+    color: var(--text-white) !important;
 }
 
 .images-container {
@@ -331,6 +331,9 @@
     }
     .teaching > div {
         font-size: 22px;
+    }
+    .contact-header {
+        font-size: 20px;
     }
     .philosophy > img {
         margin-left: 0;
@@ -449,6 +452,9 @@
     }
     .teaching > div {
         font-size: 20px;
+    }
+    .contact-header {
+        font-size: 18px;
     }
     .philosophy > img {
         height: 330px;

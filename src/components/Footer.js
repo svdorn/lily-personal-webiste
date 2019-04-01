@@ -36,7 +36,7 @@ class Footer extends Component {
                         <b>Lily Thongnuam</b>
                     </Link>
                     <div className="footer-links">
-                        <SocialLinks />
+                        <SocialLinks extras={true} />
                     </div>
                 </div>
                 <div className="footer-text">
