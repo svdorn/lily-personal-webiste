@@ -155,15 +155,15 @@
 
 .contact-form > div {
     margin: auto;
-    padding-left: 40px;
-    padding-right: 40px;
+    padding-left: 60px;
+    padding-right: 60px;
 }
 
 .text-field {
     display: flex !important;
     margin: 20px auto !important;
-    width: 250px;
-    max-width: 250px;
+    width: 300px;
+    max-width: 300px;
 }
 
 .form-button-container {
@@ -176,8 +176,8 @@
 }
 
 .text-field-multiline {
-    width: 250px;
-    max-width: 250px;
+    width: 300px;
+    max-width: 300px;
 }
 
 .contact {
