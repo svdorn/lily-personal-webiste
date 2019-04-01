@@ -130,6 +130,10 @@
 .contact-form {
     display: inline-flex;
 }
+.contact-header {
+    padding-bottom: 25px;
+    font-size: 22px;
+}
 
 .contact-social-links {
     margin-top: 15px;

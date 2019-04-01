@@ -37,6 +37,9 @@ class Contact extends React.Component {
                     <h1 className="header">Let{"'"}s Connect</h1>
                     <Swirl />
                 </div>
+                <div className="contact-header">
+                    <b>Submit bookings, inquiries, and messages here!</b>
+                </div>
                 <div className="contact-form">
                     <div>
                         <img src="/images/Lily/Headshot_1.jpg" alt="Lily Thongnuam" />
