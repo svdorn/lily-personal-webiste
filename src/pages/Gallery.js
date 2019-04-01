@@ -47,7 +47,7 @@ const imgs = [
         images: ["Pictures/WhiteDress.jpg", "Art/Monkeys.jpg"] //
     },
     {
-        images: ["Pictures/Gray_1.jpg", "Pictures/Gray_2.jpg", "Pictures/Gray_3.jpg"] //
+        images: ["Pictures/Danceshot_1.jpg", "Pictures/Bodyshot_2.jpg", "Pictures/Danceshot_2.jpg"] //
     },
     {
         images: ["Art/Colorful.jpg", "Art/Schmear.jpg"] //
@@ -62,7 +62,7 @@ const imgs = [
         images: ["Pictures/Glitter_1.jpg", "Pictures/Kick.jpg", "Pictures/Glitter_2.jpg"] //
     },
     {
-        images: ["Art/Person.jpg", "Art/Rose.jpg"] //
+        images: ["Pictures/Bodyshot_1.jpg", "Art/Person.jpg"] //
     },
     {
         images: ["Pictures/Harmony_1.jpeg", "Pictures/Lift.jpg", "Pictures/Harmony_2.jpeg"] //
@@ -80,7 +80,7 @@ const imgs = [
         images: ["Pictures/Yoga.jpg", "Pictures/PurpleDress.jpg", "Pictures/Danceshot.jpg"] //
     },
     {
-        images: ["Pictures/Gray_4.jpg", "Pictures/Stage_21.jpeg"]
+        images: ["Art/Rose.jpg", "Pictures/Stage_21.jpeg"]
     },
     {
         images: ["Pictures/Group.jpg", "Pictures/Sunset_2.jpg", "Pictures/ColorWall.jpg"]
@@ -118,19 +118,24 @@ const descriptors = [
         width: 500
     },
     {
-        image: "Pictures/Gray_1.jpg",
-        description: "photography by Azuki Umeda",
-        width: 600
+        image: "Pictures/Bodyshot_1.jpg",
+        description: "photography by Alissa Roseborough",
+        width: 400
     },
     {
-        image: "Pictures/Gray_2.jpg",
-        description: "photography by Azuki Umeda",
-        width: 600
+        image: "Pictures/Bodyshot_2.jpg",
+        description: "photography by Alissa Roseborough",
+        width: 400
     },
     {
-        image: "Pictures/Gray_3.jpg",
-        description: "photography by Azuki Umeda",
-        width: 600
+        image: "Pictures/Danceshot_1.jpg",
+        description: "photography by Alissa Roseborough",
+        width: 400
+    },
+    {
+        image: "Pictures/Danceshot_2.jpg",
+        description: "photography by Alissa Roseborough",
+        width: 400
     },
     {
         image: "Art/Colorful.jpg",
@@ -261,11 +266,6 @@ const descriptors = [
         image: "Pictures/Danceshot.jpg",
         description: "taken by Jen Kopka",
         width: 550
-    },
-    {
-        image: "Pictures/Gray_4.jpg",
-        description: "Photography by Azuki Umeda",
-        width: 650
     },
     {
         image: "Pictures/Stage_21.jpeg",

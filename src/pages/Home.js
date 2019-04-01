@@ -41,7 +41,7 @@ const Cards = () => {
     return (
         <div className="cards">
             <Card
-                img="/images/Lily/Bodyshot_1.jpg"
+                img="/images/Lily/Bodyshot_2.jpg"
                 imgWidth={110}
                 title="Dance"
                 content="Lily is trained in a variety of styles since a young age, including contemporary, jazz, hip hop, modern, ballet, ballroom, and tap."
