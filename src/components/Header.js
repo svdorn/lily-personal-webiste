@@ -152,6 +152,7 @@ class Header extends Component {
     }
 
     render() {
+        if (this.props.location && this.props.location.pathname === "/") return null;
         return (
             <div className="menu">
                 <div>

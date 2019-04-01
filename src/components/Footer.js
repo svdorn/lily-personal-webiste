@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import Button from "@material-ui/core/Button";
 import SocialLinks from "../components/SocialLinks";
+import { withRouter } from "react-router";
 
 import "./Footer.css";
 
@@ -26,6 +27,9 @@ const routes = [
 
 class Footer extends Component {
     render() {
+        console.log("props: ", this.props.location);
+
+        if (this.props.location && this.props.location.pathname === "/") return null;
         return (
             <div className="footer">
                 <div className="top-shadow" style={{ position: "absolute", zIndex: "100" }}>
@@ -55,5 +59,7 @@ class Footer extends Component {
         );
     }
 }
+
+Footer = withRouter(Footer);
 
 export default Footer;

@@ -12,15 +12,7 @@ const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
 
 class Home extends React.Component {
     state = {
-        activeStep: 0,
-        fade: false
-    };
-
-    componentDidMount = () => {
-        let self = this;
-        setTimeout(function() {
-            self.setState({ fade: true });
-        }, 3000);
+        activeStep: 0
     };
 
     handleStepChange = activeStep => {
@@ -28,18 +20,10 @@ class Home extends React.Component {
     };
 
     render() {
-        const { activeStep, fade } = this.state;
-
-        const imageFade = fade ? "image-home-fade" : "";
-
-        let coverImg = "Cover.jpg";
-        if (window.innerWidth < 800) {
-            coverImg = "Cover-Mobile.jpg";
-        }
+        const { activeStep } = this.state;
 
         return (
             <div className="container">
-                <img src={`/images/${coverImg}`} alt="Cover" className={"image-home " + imageFade} />
                 <div className="first-frame-container home-first-frame">
                     <div className="home">
                         <Bio />
@@ -86,12 +70,12 @@ const Bio = () => {
         <div className="bio-container">
             <h1>Lily Thongnuam</h1>
             <div>
-                Lily is currently graduating with a Bachelor of Fine Arts in dance performance and a
-                minor in studio art at Chapman University. Lily can be seen as a featured dancer on
-                CBS’s “The Bold and the Beautiful” alongside Nia Sioux. She has worked on short
-                films involving dance and has produced/directed her own dance films. After
-                graduation, Lily looks forward moving to Los Angeles to continue to pursue a
-                commercial dance career.
+                Lily is an artist in all of its meaning. She aspires to connect with others through
+                her emotionally driven work. She is currently graduating with a Bachelor of Fine
+                Arts in dance performance and a minor in studio art at Chapman University. From
+                performing live on stage to producing/directing her own short dance films, you can
+                find her involved in a variety of media. After graduation, Lily looks forward moving
+                to Los Angeles to continue to pursue a commercial dance career.
             </div>
             <HomeButton />
         </div>
