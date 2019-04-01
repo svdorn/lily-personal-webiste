@@ -12,8 +12,13 @@ class Philosophy extends React.Component {
                     <h1 className="header">Philosophy</h1>
                     <Swirl />
                 </div>
-                <Quote />
-                <Teaching />
+                <div className="philosophy-reverse">
+                    <img src="/images/Lily/Bodyshot_1.jpg" alt="Bodyshot_1" />
+                    <div>
+                        <Quote />
+                        <Teaching />
+                    </div>
+                </div>
                 <div className="philosophy">
                     <ArtistStatement />
                     <img src="/images/Lily/Danceshot_1.jpg" alt="Danceshot_1" />
