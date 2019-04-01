@@ -23,6 +23,10 @@ const routes = [
         link: "/choreography"
     },
     {
+        name: "Gallery",
+        link: "/gallery"
+    },
+    {
         name: "Philosophy",
         link: "/philosophy"
     },
@@ -69,11 +73,14 @@ class Header extends Component {
             case "/choreography":
                 index = 2;
                 break;
-            case "/philosophy":
+            case "/gallery":
                 index = 3;
                 break;
-            case "/contact":
+            case "/philosophy":
                 index = 4;
+                break;
+            case "/contact":
+                index = 5;
                 break;
             default:
                 index = -1;

@@ -58,12 +58,12 @@ a {
     display: inline-block;
 }
 
-@media only screen and (min-width: 1001px) {
+@media only screen and (min-width: 1051px) {
     .mobile-menu {
         display: none;
     }
 }
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1050px) {
     .desktop-menu {
         display: none;
     }
