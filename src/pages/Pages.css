@@ -90,6 +90,10 @@
     font-size: 40px;
     color: var(--text-white);
 }
+.hold-header {
+    margin-top: 90px;
+    margin-right: 280px;
+}
 
 .bio-container {
     max-width: 550px;
@@ -430,6 +434,10 @@
 
     .gallery-first-frame {
         background-image: url("/images/1-9-mobile.jpeg");
+    }
+    .hold-header {
+        margin-top: 30px;
+        margin-right: auto;
     }
 }
 
