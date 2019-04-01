@@ -47,7 +47,7 @@ class Contact extends React.Component {
                     <div>
                         <form
                             id="form-contact"
-                            action="https://formspree.io/stevedorn9@gmail.com"
+                            action="https://formspree.io/lilythongnuam@gmail.com"
                             method="POST"
                         >
                             <TextField
