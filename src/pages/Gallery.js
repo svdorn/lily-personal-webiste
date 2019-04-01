@@ -13,7 +13,7 @@ class Gallery extends React.Component {
 
     // close the dialog
     handleClose = () => {
-        this.setState({ image: null, open: false });
+        this.setState({ open: false });
     };
 
     // if an image is clicked, open dialog
