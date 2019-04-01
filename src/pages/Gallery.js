@@ -7,17 +7,18 @@ import "./Pages.css";
 class Gallery extends React.Component {
     state = {
         // the image to be displayed in the dialog
-        image: null
+        image: null,
+        open: false
     };
 
     // close the dialog
     handleClose = () => {
-        this.setState({ image: null });
+        this.setState({ image: null, open: false });
     };
 
     // if an image is clicked, open dialog
     handleClick = image => {
-        this.setState({ image });
+        this.setState({ image, open: true });
     };
 
     render() {
@@ -28,7 +29,11 @@ class Gallery extends React.Component {
                     <Swirl />
                 </div>
                 <GallaryImages handleClick={this.handleClick} />
-                <ImgDialog handleClose={this.handleClose} image={this.state.image} />
+                <ImgDialog
+                    handleClose={this.handleClose}
+                    image={this.state.image}
+                    open={this.state.open}
+                />
             </div>
         );
     }
@@ -91,10 +96,210 @@ const descriptors = [
         description:
             "photography from “Cold Heart” Technology for Live Performance show on Cirque du Soleil’s “Zumanity” stage in Las Vegas, NV",
         width: 500
+    },
+    {
+        image: "Pictures/Intense.jpg",
+        description: "photography from Works in Progress, choreography by Daniel Huyhn",
+        width: 500
+    },
+    {
+        image: "Pictures/BrickWall_2.jpg",
+        description: "taken by Ellie Edwards",
+        width: 500
+    },
+    {
+        image: "Pictures/WhiteDress.jpg",
+        description: "taken by Jen Kopka",
+        width: 500
+    },
+    {
+        image: "Art/Monkeys.jpg",
+        description: "“Passing Down Wisdom”, ceramic sculpture",
+        width: 500
+    },
+    {
+        image: "Pictures/Gray_1.jpg",
+        description: "photography by Azuki Umeda",
+        width: 600
+    },
+    {
+        image: "Pictures/Gray_2.jpg",
+        description: "photography by Azuki Umeda",
+        width: 600
+    },
+    {
+        image: "Pictures/Gray_3.jpg",
+        description: "photography by Azuki Umeda",
+        width: 600
+    },
+    {
+        image: "Art/Colorful.jpg",
+        description: "“inside my mind”, watercolor, screen printing, pen",
+        width: 550
+    },
+    {
+        image: "Art/Schmear.jpg",
+        description: "“Cascade Disarray”, acrylic, modeling paste",
+        width: 550
+    },
+    {
+        image: "Pictures/Cirque_2.jpg",
+        description:
+            "photography from “This is a Missy Elliot One-Time Exclusive” Technology for Live Performance show, on Cirque du Soleil’s “Zumanity” stage in Las Vegas, NV",
+        width: 650
+    },
+    {
+        image: "Pictures/Cirque_3.jpg",
+        description:
+            "photography from “This is a Missy Elliot One-Time Exclusive” Technology for Live Performance show, on Cirque du Soleil’s “Zumanity” stage in Las Vegas, NV",
+        width: 370
+    },
+    {
+        image: "Pictures/Cirque_1.jpg",
+        description:
+            "photography from “This is a Missy Elliot One-Time Exclusive” Technology for Live Performance show, on Cirque du Soleil’s “Zumanity” stage in Las Vegas, NV",
+        width: 650
+    },
+    {
+        image: "Pictures/Sunset_3.jpg",
+        description: "yoga on the lake in Madison, Wisconsin",
+        width: 400
+    },
+    {
+        image: "Pictures/Sunset_1.jpeg",
+        description: "yoga on the lake in Madison, Wisconsin",
+        width: 400
+    },
+    {
+        image: "Pictures/Glitter_1.jpg",
+        description: "photography from film “Break the Silence” by Liandra Davis",
+        width: 600
+    },
+    {
+        image: "Pictures/Kick.jpg",
+        description: "taken by Jen Kopka",
+        width: 350
+    },
+    {
+        image: "Pictures/Glitter_2.jpg",
+        description: "photography from film “Break the Silence” by Liandra Davis",
+        width: 600
+    },
+    {
+        image: "Art/Person.jpg",
+        description:
+            "“Trepidation & Misgivings part II”, from a dance work to an artwork; pencil, ink, marker, acrylic",
+        width: 400
+    },
+    {
+        image: "Art/Rose.jpg",
+        description: "“for grandma”, inspired by Salvador Dali, acrylic",
+        width: 400
+    },
+    {
+        image: "Pictures/Harmony_1.jpeg",
+        description: "photography from film “Irresistible: Irrepressible”",
+        width: 600
+    },
+    {
+        image: "Pictures/Lift.jpg",
+        description:
+            "photography from “Emerging Euphoria”, from Chapman Dance Alliance showcase, taken by Lindsey Sandri",
+        width: 550
+    },
+    {
+        image: "Pictures/Harmony_2.jpeg",
+        description: "photography from film “Irresistible: Irrepressible”",
+        width: 600
+    },
+    {
+        image: "Pictures/Jump_1.jpg",
+        description: "photography by Kimberly Kirn Arneson",
+        width: 550
+    },
+    {
+        image: "Pictures/Jump_2.jpg",
+        description: "photography by Kimberly Kirn Arneson",
+        width: 550
+    },
+    {
+        image: "Art/Faces.jpg",
+        description: "“Bodies Fall”, acrylic",
+        width: 600
+    },
+    {
+        image: "Art/Turtle.jpg",
+        description: "“Unattainable World”, acrylic on wood panel",
+        width: 600
+    },
+    {
+        image: "Art/Flower.jpg",
+        description: "“Summer Winds”, pastel, acrylic, marker",
+        width: 600
+    },
+    {
+        image: "Pictures/Jumps.jpg",
+        description: "photography from Concert Intime choreography by Spencer Biggs",
+        width: 600
+    },
+    {
+        image: "Pictures/Cast.jpg",
+        description: "photography from Works in Progress choreography by Daniel Huyhn",
+        width: 600
+    },
+    {
+        image: "Pictures/Yoga.jpg",
+        description: "yoga at Dragonfly Hot Yoga, Madison, WI",
+        width: 550
+    },
+    {
+        image: "Pictures/PurpleDress.jpg",
+        description: "silhouette in Chicago, IL",
+        width: 550
+    },
+    {
+        image: "Pictures/Danceshot.jpg",
+        description: "taken by Jen Kopka",
+        width: 550
+    },
+    {
+        image: "Pictures/Gray_4.jpg",
+        description: "Photography by Azuki Umeda",
+        width: 650
+    },
+    {
+        image: "Pictures/Stage_21.jpeg",
+        description: "taken from backstage at “The Bold and the Beautiful”",
+        width: 550
+    },
+    {
+        image: "Pictures/Group.jpg",
+        description: "photography from Concert Intime choreography by Spencer Biggs",
+        width: 550
+    },
+    {
+        image: "Pictures/Sunset_2.jpg",
+        description: "yoga on the beach in OC, California",
+        width: 450
+    },
+    {
+        image: "Pictures/ColorWall.jpg",
+        description: "taken by Lexi McCann",
+        width: 550
+    },
+    {
+        image: "Art/Wolf.jpg",
+        description: "“Untitled”; scratchboard, prize award at student showcase",
+        width: 550
+    },
+    {
+        image: "Pictures/BrickWall.jpg",
+        description: "taken by Ellie Edwards",
+        width: 450
     }
 ];
 
-const ImgDialog = ({ image, handleClose }) => {
+const ImgDialog = ({ image, handleClose, open }) => {
     const description = descriptors.find(descriptor => {
         return descriptor.image === image;
     });
@@ -102,7 +307,7 @@ const ImgDialog = ({ image, handleClose }) => {
     return (
         <Dialog
             onClose={handleClose}
-            open={image ? true : false}
+            open={open}
             className="gallery-dialog"
             style={{ width: description && description.description ? description.width : null }}
         >
