@@ -7,6 +7,8 @@ a {
     position: absolute;
     top: 0;
     width: 100%;
+    background-color: transparent;
+    color: var(--text-white);
     z-index: 100;
 }
 
@@ -37,11 +39,12 @@ a {
 }
 
 .desktop-menu > a:hover {
-    background-color: var(--secondary-purple);
+    background-color: var(--background-color);
+    color: var(--text-black);
     border-radius: 5px;
 }
 .desktop-menu > a > div.selected {
-    color: var(--text-white);
+    color: var(--text-black);
 }
 .desktop-menu > a:hover > div.selected {
     color: var(--text-black);

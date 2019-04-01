@@ -8,7 +8,7 @@ class Philosophy extends React.Component {
     render() {
         return (
             <div className="container">
-                <div className="first-frame-container philosophy-first-frame">
+                <div className="first-frame-container about-first-frame">
                     <h1 className="header">Philosophy</h1>
                     <Swirl />
                 </div>

@@ -12,6 +12,10 @@ body {
     background-color: var(--background-color);
 }
 
+.hidden-images {
+    display: none;
+}
+
 .font42px {
     font-size: 42px;
 }

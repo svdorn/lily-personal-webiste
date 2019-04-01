@@ -26,12 +26,22 @@
 
 .about-first-frame {
     height: 400px;
-    background-image: url("/images/Gallery/Pictures/Gray_1.jpg");
+    background-image: url("/images/1-5.jpeg");
 }
 
 .dance-first-frame {
     height: 400px;
-    background-image: url("/images/Gallery/Pictures/Gray_1.jpg");
+    background-image: url("/images/1-7.jpeg");
+}
+
+.choreography-first-frame {
+    height: 400px;
+    background-image: url("/images/1-8.jpeg");
+}
+
+.gallery-first-frame {
+    height: 400px;
+    background-image: url("/images/1-9.jpeg");
 }
 
 .philosophy-first-frame {

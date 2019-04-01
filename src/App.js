@@ -33,6 +33,13 @@ const App = () => (
                 <Header />
 
                 <div className="App">
+                    <span className="hidden-images">
+                        <img src="/images/Opener.jpg" />
+                        <img src="/images/1-5.jpeg" />
+                        <img src="/images/1-7.jpeg" />
+                        <img src="/images/1-8.jpeg" />
+                        <img src="/images/1-9.jpeg" />
+                    </span>
                     <Route path="/" exact component={Home} />
                     <Route path="/about" component={About} />
                     <Route path="/contact" component={Contact} />

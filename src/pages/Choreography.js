@@ -8,7 +8,7 @@ class Choreography extends React.Component {
     render() {
         return (
             <div className="container">
-                <div className="first-frame-container dance-first-frame">
+                <div className="first-frame-container choreography-first-frame">
                     <h1 className="header">Choreography</h1>
                     <Swirl />
                 </div>

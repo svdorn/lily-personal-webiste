@@ -24,7 +24,7 @@ class Gallery extends React.Component {
     render() {
         return (
             <div className="container">
-                <div className="first-frame-container dance-first-frame">
+                <div className="first-frame-container gallery-first-frame">
                     <h1 className="header">Gallery</h1>
                     <Swirl />
                 </div>
