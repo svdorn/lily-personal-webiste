@@ -1,19 +1,26 @@
 import React from "react";
+import Dialog from "@material-ui/core/Dialog";
 import Swirl from "../components/Swirl";
 
 import "./Pages.css";
 
 class Gallery extends React.Component {
     state = {
+        // the image to be displayed in the dialog
         image: null
     };
 
+    // close the dialog
+    handleClose = () => {
+        this.setState({ image: null });
+    };
+
+    // if an image is clicked, open dialog
     handleClick = image => {
         this.setState({ image });
     };
 
     render() {
-        console.log("image: ", this.state.image);
         return (
             <div className="container">
                 <div className="first-frame-container dance-first-frame">
@@ -21,6 +28,7 @@ class Gallery extends React.Component {
                     <Swirl />
                 </div>
                 <GallaryImages handleClick={this.handleClick} />
+                <ImgDialog handleClose={this.handleClose} image={this.state.image} />
             </div>
         );
     }
@@ -76,6 +84,35 @@ const imgs = [
         images: ["Art/Wolf.jpg", "Pictures/BrickWall.jpg"]
     }
 ];
+
+const descriptors = [
+    {
+        image: "Pictures/Snake.jpg",
+        description:
+            "photography from “Cold Heart” Technology for Live Performance show on Cirque du Soleil’s “Zumanity” stage in Las Vegas, NV",
+        width: 500
+    }
+];
+
+const ImgDialog = ({ image, handleClose }) => {
+    const description = descriptors.find(descriptor => {
+        return descriptor.image === image;
+    });
+
+    return (
+        <Dialog
+            onClose={handleClose}
+            open={image ? true : false}
+            className="gallery-dialog"
+            style={{ width: description && description.description ? description.width : null }}
+        >
+            <img src={`/images/Gallery/${image}`} className="gallery-dialog-img" />
+            {description && description.description ? (
+                <div className="gallery-dialog-description">{description.description}</div>
+            ) : null}
+        </Dialog>
+    );
+};
 
 const GallaryImages = ({ handleClick }) => {
     return (

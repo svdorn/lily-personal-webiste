@@ -235,6 +235,17 @@
     -webkit-box-shadow: 0px 0px 10px 5px #676767;
 }
 
+.gallery-dialog {
+    margin: auto;
+}
+.gallery-dialog-img {
+    width: 100%;
+}
+.gallery-dialog-description {
+    padding: 10px;
+    width: inherit;
+}
+
 .button-container {
     margin-top: 25px;
 }
