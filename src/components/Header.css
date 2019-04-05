@@ -15,7 +15,6 @@ a {
 .menu > div:first-child {
     margin: 10px 0 0 20px;
     display: inline-block;
-    font-family: Impact, Charcoal, sans-serif;
 }
 .desktop-menu {
     float: right;
@@ -58,21 +57,20 @@ a {
 }
 
 .title {
-    height: 50px;
+    height: 42px;
 }
 
-@media only screen and (min-width: 1321px) {
+@media only screen and (min-width: 1251px) {
     .mobile-menu {
         display: none;
     }
 }
-@media only screen and (max-width: 1320px) {
+@media only screen and (max-width: 1250px) {
     .desktop-menu {
         display: none;
     }
     .menu > div:first-child {
-        margin: 25px 10px;
-        font-size: 22px;
+        margin: 10px;
     }
     .title {
         height: 40px;
