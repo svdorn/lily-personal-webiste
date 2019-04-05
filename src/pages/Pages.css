@@ -364,6 +364,12 @@
     overflow-x: hidden;
 }
 
+@media only screen and (min-width: 1700px) {
+    .home-first-frame {
+        height: 700px;
+    }
+}
+
 @media only screen and (max-width: 950px) {
     .philosophy-reverse {
         display: block;
@@ -457,7 +463,7 @@
         font-size: 17px;
     }
     .home-first-frame {
-        background-image: url("/images/Opener-mobile.jpeg");
+        background-image: url("/images/Opener-mobile.jpg");
     }
 
     .about-first-frame {
@@ -482,9 +488,6 @@
     .home {
         display: block;
         margin: 40px auto 0 auto;
-    }
-    .home-first-frame {
-        height: 900px;
     }
     .bio-container {
         line-height: 1.4em;
