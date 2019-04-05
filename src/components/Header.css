@@ -76,3 +76,21 @@ a {
         height: 40px;
     }
 }
+
+@media only screen and (max-width: 600px) {
+    .menu > div:first-child {
+        margin: 20px 10px;
+    }
+    .title {
+        height: 30px;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .menu > div:first-child {
+        margin: 22px 10px;
+    }
+    .title {
+        height: 25px;
+    }
+}
