@@ -13,7 +13,7 @@ class Philosophy extends React.Component {
                     <Swirl />
                 </div>
                 <div className="philosophy-reverse">
-                    <img src="/images/Lily/Bodyshot_1.jpg" alt="Bodyshot_1" />
+                    <img src="/images/Lily/Bodyshot_2.jpg" alt="Bodyshot_2" />
                     <div>
                         <Quote />
                         <Teaching />
