@@ -36,7 +36,7 @@ const App = () => (
                     <span className="hidden-images">
                         <img src="/images/Opener.jpg" />
                         <img src="/images/Opener-mobile.jpg" />
-                        <img src="/images/1-4.jpg" />
+                        <img src="/images/1-4.jpeg" />
                         <img src="/images/1-5.jpeg" />
                         <img src="/images/1-7.jpeg" />
                         <img src="/images/1-8.jpeg" />
