@@ -114,9 +114,10 @@ class Contact extends React.Component {
                             <b>Upcoming Events</b>
                         </div>
                         <p>
-                            <div>Concert Intime</div>
-                            April 5th and 6th at 7:30 pm, April 6th at 2:00 pm at the Waltmar
-                            Theater <br />
+                            <div>
+                                <i>Concert Intime</i>
+                            </div>
+                            April 5th at 7:30 pm, April 6th at 2:00 pm at the Waltmar Theater <br />
                             Performance by Lily Thongnuam
                         </p>
                         <p>
@@ -136,7 +137,9 @@ class Contact extends React.Component {
                             Performance by Lily Thongnuam
                         </p>
                         <p>
-                            <div>Spring Dance Concert</div>
+                            <div>
+                                <i>Spring Dance Concert</i>
+                            </div>
                             May 3rd and 4th at 7:30 pm at the Musco Center for the Arts <br />
                             Choreography by Lily Thongnuam
                         </p>
