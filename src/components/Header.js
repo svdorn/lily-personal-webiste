@@ -156,7 +156,7 @@ class Header extends Component {
             <div className="menu">
                 <div>
                     <Link to="/">
-                        <img src="/images/Title.png" className="title" />
+                        <img src="/images/Title.png" className="title" alt="Lily Thongnuam" />
                     </Link>
                 </div>
                 {this.makeDesktopMenu()}
