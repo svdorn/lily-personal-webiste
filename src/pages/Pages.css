@@ -546,6 +546,9 @@
     .gallery-dialog {
         max-width: 450px;
     }
+    .home-first-frame {
+        height: 330px;
+    }
 }
 
 @media only screen and (max-width: 500px) {
