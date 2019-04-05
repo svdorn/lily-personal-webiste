@@ -46,9 +46,6 @@ a {
 .desktop-menu > a:hover > div.selected {
     color: var(--text-black);
 }
-.desktop-menu > div:last-child {
-    margin-right: 25px;
-}
 .mobile-menu {
     float: right;
     margin-top: 8px;
@@ -60,12 +57,12 @@ a {
     height: 42px;
 }
 
-@media only screen and (min-width: 1251px) {
+@media only screen and (min-width: 1221px) {
     .mobile-menu {
         display: none;
     }
 }
-@media only screen and (max-width: 1250px) {
+@media only screen and (max-width: 1220px) {
     .desktop-menu {
         display: none;
     }
