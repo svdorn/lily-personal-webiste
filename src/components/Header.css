@@ -13,9 +13,7 @@ a {
 }
 
 .menu > div:first-child {
-    color: var(--text-white);
-    font-size: 28px;
-    margin: 20px 20px 0 20px;
+    margin: 10px 0 0 20px;
     display: inline-block;
     font-family: Impact, Charcoal, sans-serif;
 }
@@ -59,17 +57,24 @@ a {
     display: inline-block;
 }
 
-@media only screen and (min-width: 1171px) {
+.title {
+    height: 50px;
+}
+
+@media only screen and (min-width: 1321px) {
     .mobile-menu {
         display: none;
     }
 }
-@media only screen and (max-width: 1170px) {
+@media only screen and (max-width: 1320px) {
     .desktop-menu {
         display: none;
     }
     .menu > div:first-child {
         margin: 25px 10px;
         font-size: 22px;
+    }
+    .title {
+        height: 40px;
     }
 }
