@@ -73,8 +73,8 @@ const Bio = () => {
                 her emotionally driven work. She is currently graduating with a Bachelor of Fine
                 Arts in dance performance and a minor in studio art at Chapman University. From
                 performing live on stage to producing/directing her own short dance films, you can
-                find her involved in a variety of media. After graduation, Lily looks forward moving
-                to Los Angeles to continue to pursue a commercial dance career.
+                find her involved in a variety of media. After graduation, Lily looks forward to
+                moving to Los Angeles to continue to pursue a commercial dance career.
             </div>
             <HomeButton />
         </div>
