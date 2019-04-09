@@ -66,7 +66,7 @@ const Bio = () => {
                 In the commercial world, she can be seen as a featured dancer on CBS’s “The Bold and
                 the Beautiful” alongside Nia Sioux. She has worked on short films involving dance
                 and has produced/directed her own dance films. After graduation, Lily looks forward
-                moving to Los Angeles to continue to pursue a commercial dance career.
+                to moving to Los Angeles to continue to pursue a commercial dance career.
             </p>
         </Paper>
     );
