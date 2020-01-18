@@ -1,4 +1,6 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import Button from "@material-ui/core/Button";
 import Paper from "@material-ui/core/Paper";
 import Swirl from "../components/Swirl";
 
@@ -14,7 +16,14 @@ class About extends React.Component {
                 </div>
                 <div className="philosophy">
                     <Bio />
-                    <img src="/images/Lily/Headshot_2.jpg" alt="Headshot_2" />
+                    <span>
+                        <img src="/images/Lily/Headshot_2.jpg" alt="Headshot_2" />
+                        <div>
+                            <Button component={GoToContact} size="large">
+                                Send An Inquiry
+                            </Button>
+                        </div>
+                    </span>
                 </div>
                 <Resume />
             </div>
@@ -57,7 +66,7 @@ const Bio = () => {
                 In the commercial world, she can be seen as a featured dancer on CBS’s “The Bold and
                 the Beautiful” alongside Nia Sioux. She has worked on short films involving dance
                 and has produced/directed her own dance films. After graduation, Lily looks forward
-                moving to Los Angeles to continue to pursue a commercial dance career.
+                to moving to Los Angeles to continue to pursue a commercial dance career.
             </p>
         </Paper>
     );
@@ -75,5 +84,7 @@ const Resume = () => {
         </div>
     );
 };
+
+const GoToContact = props => <Link to="/contact" {...props} />;
 
 export default About;

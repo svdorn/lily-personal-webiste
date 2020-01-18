@@ -41,7 +41,7 @@
 
 .gallery-first-frame {
     height: 400px;
-    background-image: url("/images/1-4.jpg");
+    background-image: url("/images/1-4.jpeg");
 }
 
 .philosophy-first-frame {
@@ -200,6 +200,30 @@
 .contact > div > div:not(:first-child) {
     margin-top: 20px;
 }
+.upcoming-events {
+    margin: 60px auto;
+    width: 91%;
+}
+.upcoming-events > div {
+    max-width: 550px;
+    font-size: 14px;
+    line-height: 1.3em;
+    text-align: center;
+    padding: 30px;
+    margin: auto;
+    /* Safari 3-4, iOS 1-3.2, Android 1.6- */
+    -webkit-border-radius: 25px;
+    /* Firefox 1-3.6 */
+    -moz-border-radius: 25px;
+    border-radius: 25px;
+}
+.upcoming-events > div > div {
+    font-size: 22px;
+    padding-bottom: 10px;
+}
+.upcoming-events > div > p > div {
+    font-size: 18px;
+}
 
 .philosophy-quote {
     max-width: 550px;
@@ -255,6 +279,27 @@
     /* Firefox 1-3.6 */
     -moz-border-radius: 25px;
     border-radius: 25px;
+}
+.philosphy > span {
+}
+.philosophy > span > img {
+    margin-left: 100px;
+    height: 530px;
+    /* Safari 3-4, iOS 1-3.2, Android 1.6- */
+    -webkit-border-radius: 25px;
+    /* Firefox 1-3.6 */
+    -moz-border-radius: 25px;
+    border-radius: 25px;
+}
+.philosophy > span > div {
+    margin-left: 100px;
+    margin-top: 30px;
+    text-align: center;
+}
+.philosophy > span > div > a {
+    background: var(--primary-purple);
+    color: var(--text-white);
+    padding: 12px 30px;
 }
 .philosophy-reverse {
     display: inline-flex;
@@ -343,6 +388,12 @@
     overflow-x: hidden;
 }
 
+@media only screen and (min-width: 1700px) {
+    .home-first-frame {
+        height: 700px;
+    }
+}
+
 @media only screen and (max-width: 950px) {
     .philosophy-reverse {
         display: block;
@@ -407,6 +458,25 @@
         -moz-border-radius: 20px;
         border-radius: 20px;
     }
+    .philosphy > span {
+    }
+    .philosophy > span > img {
+        margin-left: 0;
+        margin-top: 40px;
+        height: 430px;
+        /* Safari 3-4, iOS 1-3.2, Android 1.6- */
+        -webkit-border-radius: 20px;
+        /* Firefox 1-3.6 */
+        -moz-border-radius: 20px;
+        border-radius: 20px;
+    }
+    .philosophy > span > div {
+        margin-left: 0px;
+        margin-top: 20px;
+    }
+    .philosophy > span > div > a {
+        padding: 8px 24px;
+    }
     .bio-container {
         max-width: 450px;
     }
@@ -417,7 +487,7 @@
         font-size: 17px;
     }
     .home-first-frame {
-        background-image: url("/images/Opener-mobile.jpeg");
+        background-image: url("/images/Opener-mobile.jpg");
     }
 
     .about-first-frame {
@@ -442,9 +512,6 @@
     .home {
         display: block;
         margin: 40px auto 0 auto;
-    }
-    .home-first-frame {
-        height: 900px;
     }
     .bio-container {
         line-height: 1.4em;
@@ -484,6 +551,22 @@
     .resume > img {
         height: 700px;
     }
+    .upcoming-events > div {
+        font-size: 12px;
+        padding: 20px;
+        /* Safari 3-4, iOS 1-3.2, Android 1.6- */
+        -webkit-border-radius: 20px;
+        /* Firefox 1-3.6 */
+        -moz-border-radius: 20px;
+        border-radius: 20px;
+    }
+    .upcoming-events > div > div {
+        font-size: 20px;
+        padding-bottom: 7px;
+    }
+    .upcoming-events > div > p > div {
+        font-size: 16px;
+    }
 }
 
 @media only screen and (max-width: 700px) {
@@ -502,6 +585,9 @@
     }
     .gallery-dialog {
         max-width: 450px;
+    }
+    .home-first-frame {
+        height: 330px;
     }
 }
 
@@ -548,6 +634,14 @@
     .philosophy > img {
         height: 330px;
         margin-top: 25px;
+    }
+    .philosophy > span > img {
+        height: 330px;
+        margin-top: 25px;
+    }
+
+    .philosophy > span > div > a {
+        padding: 6px 20px;
     }
     .gallery-dialog {
         max-width: 300px;

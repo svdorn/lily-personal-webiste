@@ -36,7 +36,7 @@
     padding-right: 60px;
     margin-top: 60px;
 }
-.footer-button > button {
+.footer-button > a {
     background: var(--primary-purple);
     color: var(--text-white);
 }

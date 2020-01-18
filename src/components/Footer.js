@@ -47,13 +47,15 @@ class Footer extends Component {
                     ))}
                 </div>
                 <div className="footer-button">
-                    <Button size="large">
-                        <Link to="/contact">Contact Lily</Link>
+                    <Button component={GoToContact} size="large">
+                        Contact Lily
                     </Button>
                 </div>
             </div>
         );
     }
 }
+
+const GoToContact = props => <Link to="/contact" {...props} />;
 
 export default Footer;
