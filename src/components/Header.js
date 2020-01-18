@@ -27,10 +27,6 @@ const routes = [
         link: "/gallery"
     },
     {
-        name: "Philosophy",
-        link: "/philosophy"
-    },
-    {
         name: "Contact",
         link: "/contact"
     }
@@ -76,11 +72,8 @@ class Header extends Component {
             case "/gallery":
                 index = 3;
                 break;
-            case "/philosophy":
-                index = 4;
-                break;
             case "/contact":
-                index = 5;
+                index = 4;
                 break;
             default:
                 index = -1;
