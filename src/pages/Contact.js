@@ -108,43 +108,6 @@ class Contact extends React.Component {
                         </form>
                     </div>
                 </div>
-                <div className="upcoming-events">
-                    <Paper elevation={3} square={false}>
-                        <div>
-                            <b>Upcoming Events</b>
-                        </div>
-                        <p>
-                            <div>
-                                <i>Concert Intime</i>
-                            </div>
-                            April 5th at 7:30 pm, April 6th at 2:00 pm at the Waltmar Theater <br />
-                            Performance by Lily Thongnuam
-                        </p>
-                        <p>
-                            <div>
-                                <i>Embark</i> - 2019 BFA Dance Showcase
-                            </div>
-                            April 7th at 5:00 pm at the Waltmar Theater
-                            <br />
-                            Performance by Lily Thongnuam
-                        </p>
-                        <p>
-                            <div>
-                                <i>Embark at The Diavolo Space</i>
-                            </div>
-                            April 16th at 7:00 pm at The Diavolo Space
-                            <br />
-                            Performance by Lily Thongnuam
-                        </p>
-                        <p>
-                            <div>
-                                <i>Spring Dance Concert</i>
-                            </div>
-                            May 3rd and 4th at 7:30 pm at the Musco Center for the Arts <br />
-                            Choreography by Lily Thongnuam
-                        </p>
-                    </Paper>
-                </div>
             </div>
         );
     }
