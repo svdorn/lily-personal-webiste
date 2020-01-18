@@ -51,7 +51,7 @@ const Cards = () => {
                 img="/images/Chapman.jpg"
                 imgWidth={150}
                 title="Education"
-                content="Lily is studying at Chapman University where she will graduate in May with a BFA in Dance Performance and a minor in Studio Art."
+                content="Lily graduated from Chapman University in May 2019 with a BFA in Dance Performance and a minor in Studio Art."
                 link="/about"
             />
             <Card
