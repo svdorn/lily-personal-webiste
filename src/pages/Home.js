@@ -70,11 +70,11 @@ const Bio = () => {
         <div className="bio-container">
             <div>
                 Lily is an artist in all of its meaning. She aspires to connect with others through
-                her emotionally driven work. She is currently graduating with a Bachelor of Fine
-                Arts in dance performance and a minor in studio art at Chapman University. From
+                her emotionally driven work. She graduated with a Bachelor of Fine Arts in dance
+                performance and a minor in studio art from Chapman University in May 2019. From
                 performing live on stage to producing/directing her own short dance films, you can
-                find her involved in a variety of media. After graduation, Lily looks forward to
-                moving to Los Angeles to continue to pursue a commercial dance career.
+                find her involved in a variety of media. Lily currently lives in Los Angeles and is
+                signed with Go 2 Talent Agency.
             </div>
             <HomeButton />
         </div>

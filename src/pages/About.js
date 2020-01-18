@@ -65,8 +65,8 @@ const Bio = () => {
             <p>
                 In the commercial world, she can be seen as a featured dancer on CBS’s “The Bold and
                 the Beautiful” alongside Nia Sioux. She has worked on short films involving dance
-                and has produced/directed her own dance films. After graduation, Lily looks forward
-                to moving to Los Angeles to continue to pursue a commercial dance career.
+                and has produced/directed her own dance films. Lily currently lives in Los Angeles
+                and is signed with Go 2 Talent Agency.
             </p>
         </Paper>
     );
