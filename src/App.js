@@ -34,15 +34,12 @@ const App = () => (
                     <span className="hidden-images">
                         <img src="/images/Opener.jpg" />
                         <img src="/images/Opener-mobile.jpg" />
-                        <img src="/images/1-4.jpeg" />
                         <img src="/images/1-5.jpeg" />
                         <img src="/images/1-7.jpeg" />
                         <img src="/images/1-8.jpeg" />
-                        <img src="/images/1-9.jpeg" />
                         <img src="/images/1-5-mobile.jpeg" />
                         <img src="/images/1-7-mobile.jpeg" />
                         <img src="/images/1-8-mobile.jpeg" />
-                        <img src="/images/1-9-mobile.jpeg" />
                     </span>
                     <Route path="/" exact component={Home} />
                     <Route path="/about" component={About} />
