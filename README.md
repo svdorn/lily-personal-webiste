@@ -21,4 +21,8 @@ npm start
 
 ## Deployment
 
-System to be deployed to AWS elastic beanstalk.
+Is deployed to AWS Elasticbeanstalk.
+To deploy, get the correct security credentials and run:
+```
+eb deploy
+```
